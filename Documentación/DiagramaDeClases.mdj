@@ -147,7 +147,7 @@
 											"top": 110,
 											"width": 191,
 											"height": 13,
-											"text": "+double: id_sep",
+											"text": "-double: id_sep",
 											"horizontalAlignment": 0
 										},
 										{
@@ -166,7 +166,7 @@
 											"top": 125,
 											"width": 191,
 											"height": 13,
-											"text": "+int: num_inventario",
+											"text": "-int: num_inventario",
 											"horizontalAlignment": 0
 										},
 										{
@@ -185,7 +185,7 @@
 											"top": 140,
 											"width": 191,
 											"height": 13,
-											"text": "+int: cantidad",
+											"text": "-int: cantidad",
 											"horizontalAlignment": 0
 										},
 										{
@@ -204,7 +204,7 @@
 											"top": 155,
 											"width": 191,
 											"height": 13,
-											"text": "+String: descripcion",
+											"text": "-String: descripcion",
 											"horizontalAlignment": 0
 										},
 										{
@@ -223,7 +223,7 @@
 											"top": 170,
 											"width": 191,
 											"height": 13,
-											"text": "+String: marca",
+											"text": "-String: marca",
 											"horizontalAlignment": 0
 										},
 										{
@@ -242,7 +242,7 @@
 											"top": 185,
 											"width": 191,
 											"height": 13,
-											"text": "+String: modelo",
+											"text": "-String: modelo",
 											"horizontalAlignment": 0
 										},
 										{
@@ -261,7 +261,7 @@
 											"top": 200,
 											"width": 191,
 											"height": 13,
-											"text": "+String: serie",
+											"text": "-String: serie",
 											"horizontalAlignment": 0
 										},
 										{
@@ -280,7 +280,7 @@
 											"top": 215,
 											"width": 191,
 											"height": 13,
-											"text": "+double: valor",
+											"text": "-double: valor",
 											"horizontalAlignment": 0
 										},
 										{
@@ -299,7 +299,7 @@
 											"top": 230,
 											"width": 191,
 											"height": 13,
-											"text": "+String: fecha_adquisicion",
+											"text": "-String: fecha_adquisicion",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2089,6 +2089,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "double",
+							"visibility": "private",
 							"type": "id_sep"
 						},
 						{
@@ -2098,6 +2099,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "int",
+							"visibility": "private",
 							"type": "num_inventario"
 						},
 						{
@@ -2107,6 +2109,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "int",
+							"visibility": "private",
 							"type": "cantidad"
 						},
 						{
@@ -2116,6 +2119,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "String",
+							"visibility": "private",
 							"type": "descripcion"
 						},
 						{
@@ -2125,6 +2129,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "String",
+							"visibility": "private",
 							"type": "marca"
 						},
 						{
@@ -2134,6 +2139,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "String",
+							"visibility": "private",
 							"type": "modelo"
 						},
 						{
@@ -2143,6 +2149,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "String",
+							"visibility": "private",
 							"type": "serie"
 						},
 						{
@@ -2152,6 +2159,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "double",
+							"visibility": "private",
 							"type": "valor"
 						},
 						{
@@ -2161,6 +2169,7 @@
 								"$ref": "AAAAAAF/ldO6JmRmJrQ="
 							},
 							"name": "String",
+							"visibility": "private",
 							"type": "fecha_adquisicion"
 						},
 						{
