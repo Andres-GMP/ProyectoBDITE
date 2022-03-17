@@ -1,0 +1,61 @@
+.panel{
+    background-color: #0F5FA9;
+    margin: 50px;
+    padding: 1px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-radius: 10px;
+    
+    
+}
+
+.block1{
+
+    background-color: green;
+    margin: 8px 0px 5px 5px;
+    padding: 50px;
+    background-image: url("/imagenes/PORTADA.jpg");
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+
+}
+.block2{
+
+    background-color: white;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    margin: 8px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.logoite{
+
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 360px;
+    margin-bottom: 150px;
+    border: 2px solid black;
+    
+}
+
+/*Imagen del ite*/
+.block1, .img{
+    
+    border-radius: 8px;
+}
+
+label,button{
+    display: flex;
+}
+
