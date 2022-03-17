@@ -13,7 +13,6 @@
 
 .block1{
 
-    background-color: green;
     margin: 8px 0px 5px 5px;
     padding: 50px;
     background-image: url("https://user-images.githubusercontent.com/88638634/158725380-a4d21072-643f-44df-95f8-b62336251f1a.jpg");
@@ -46,6 +45,7 @@
     border-radius: 360px;
     margin-bottom: 150px;
     border: 2px solid black;
+    mix-blend-mode:difference;
     
 }
 
@@ -58,4 +58,37 @@
 label,button{
     display: flex;
 }
+
+.forms{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#boton-iniciar{
+
+    background-color: green;
+    padding: 4px;
+    border-radius: 69px ;
+}
+.label{
+
+    border-radius: 69px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    padding: 3px;
+
+}
+.botonprueba{
+
+    display: flex;
+    background-color: aquamarine;
+    border-radius: 10px;
+
+}
+
+
+
+
+
 
