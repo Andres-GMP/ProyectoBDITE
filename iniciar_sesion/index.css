@@ -67,23 +67,56 @@ label,button{
 
 #boton-iniciar{
 
-    background-color: green;
-    padding: 4px;
-    border-radius: 69px ;
+    background-color: white;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 69px;
+    
 }
 .label{
 
+    display: flex;
     border-radius: 69px;
     margin-bottom: 10px;
     margin-top: 3px;
-    padding: 3px;
+    padding: 5px;
+    background-color: #0F5FA9;
+    color: white;
+    border: solid 1px white;
+    box-shadow: 0.5px 1.2px 0px 0.7px rgb(102, 102, 102);
+    outline: none;
+    font-size: 20px;
+    font-style: normal;
+    text-shadow: 0.5px 1.2px 0px 0.7px rgb(12, 12, 12);
+    width: 230px;
+    height: 35px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 800; 
 
+    /* Al darle clic 
+    box-shadow: inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC;
+    */
+
+    
+}
+
+::placeholder{
+    
+    text-align: center;
+    color: rgb(177, 175, 172);
+    
+}
+
+.este{
+
+    box-shadow: 10px 10px 10px;
 }
 .botonprueba{
 
     display: flex;
-    background-color: aquamarine;
+    background-color: #0F5FA9;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px;
 
 }
 
