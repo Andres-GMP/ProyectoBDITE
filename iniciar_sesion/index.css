@@ -73,6 +73,8 @@ label,button{
     padding: 10px;
     border: solid 2px black;
     border-radius: 69px;
+    cursor: pointer;
+    margin-top: 5px;
 
 }
 .label{
