@@ -536,7 +536,7 @@
 											"top": 374,
 											"width": 121.04345703125,
 											"height": 13,
-											"text": "+String[]: estatus",
+											"text": "-String[]: estatus",
 											"horizontalAlignment": 0
 										},
 										{
@@ -575,7 +575,7 @@
 											"top": 389,
 											"width": 121.04345703125,
 											"height": 13,
-											"text": "+String[]: adquisicion",
+											"text": "-String[]: adquisicion",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2284,6 +2284,7 @@
 								"$ref": "AAAAAAF/ldbgp2SZmj8="
 							},
 							"name": "String[]",
+							"visibility": "private",
 							"type": "estatus"
 						},
 						{
@@ -2302,6 +2303,7 @@
 								"$ref": "AAAAAAF/ldbgp2SZmj8="
 							},
 							"name": "String[]",
+							"visibility": "private",
 							"type": "adquisicion"
 						}
 					]
