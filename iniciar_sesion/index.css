@@ -30,12 +30,12 @@
     background-color: white;
     padding: 50px;
     width: 100%;
-    display: flex;
-    border-radius: 8px;
+    display: flex; 
     margin: 8px 5px 5px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-border-radius: 0px 8px 8px 0px;
    
 }
 
@@ -49,12 +49,13 @@
     border: 2px solid black;
     box-shadow: 0px 3px 3px 0px rgb(2, 2, 2);
     
+    
 }
 
 /*Imagen del ite*/
 .block1, .img{
     
-    border-radius: 8px;
+    -webkit-border-radius: 8px 0px 0px 8px;
 }
 
 label,button{
