@@ -15,8 +15,6 @@ html, body {
     background-position:center center ;
     background-size: cover;
     background-attachment: fixed;
-
-
     width: 100%;
     height: 100%;
     display: grid;
@@ -31,8 +29,24 @@ html, body {
     clip-path: polygon(101% -5%, 0% 50%, 101% 105%);
     opacity: 0.9;
 }
-
 .box-blanco {
     background-color: white;
     opacity: 0.9;
+}
+
+.logo{
+
+
+}
+
+.logoimagen{
+
+    border-radius: 360px;
+    background-color: white;
+    
+}
+
+.logo img{
+    width: 200px;
+    height: 200px;
 }
