@@ -1,50 +1,38 @@
 .panel{
     background-color: #0F5FA9;
-    margin: 50px;
-    padding: 1px;
-    height: 600px;
-
-    display: grid;
-
-    /* display: flex;
-    flex-direction: row;
-    justify-content: left; */
+    
     border-radius: 10px;
     max-width: 100%;
     min-width: 300px;
-    
-    
+    padding: 20px;
 }
 
 .block1{
-    grid-column: 1 /2;
-    margin: 8px 0px 5px 5px;
-    padding: 50px;
+    display: grid;
     background-image: url("https://user-images.githubusercontent.com/88638634/158725380-a4d21072-643f-44df-95f8-b62336251f1a.jpg");
-    width: 100%;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    
-
 }
-.block2{
 
-    grid-column: 2/2;
-    opacity: 0.5;
+.izq1{
+grid-column: 1/2;
+padding: 50px;
+margin: 100px 50px 0px 100px;
+}
 
-    background-color: white;
-    padding: 50px;
-    display: flex; 
-    margin: 8px 5px 5px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-border-radius: 0px 8px 8px 0px;   
+.der2{
+/* padding: 50px; */
+grid-column: 2/2;
+}
+.triangulo{
+
+    
+    -webkit-border-radius: 0px 8px 8px 0px; 
+    border-right: 200px solid #ffffff;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;  
 }
 
 .logoite{
-
+    width: fit-content;
     background-color: white;
     text-align: center;
     padding: 18px;
@@ -58,7 +46,7 @@
 
 /*Imagen del ite*/
 .block1, .img{
-    width: 100%;
+
     -webkit-border-radius: 8px 0px 0px 8px;
 }
 
@@ -67,9 +55,11 @@ label,button{
 }
 
 .forms{
+    position: absolute;
 
     display: flex;
     flex-direction: column;
+    /* justify-content: end; */
 }
 
 #boton-iniciar{
