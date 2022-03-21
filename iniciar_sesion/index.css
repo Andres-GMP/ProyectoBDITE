@@ -21,16 +21,55 @@ margin: 100px 50px 0px 100px;
 .der2{
 /* padding: 50px; */
 grid-column: 2/2;
+display: grid;
+display: flex;
+justify-content: flex-end;
+
+
+
 }
 .triangulo{
+ 
 
+    box-sizing: content-box;
+    border-width: 500px 180px 0;
+    border-style: solid;
     
-    -webkit-border-radius: 0px 8px 8px 0px; 
-    border-right: 200px solid #ffffff;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;  
+    
+    /*
+    border-right: 550px solid white;
+    border-top: 275px solid transparent;
+    border-bottom: 315px solid transparent; 
+    grid-column: 1;
+    position: absolute;
+    margin-top: 0% ;
+    margin-right:0%;
+    */
+    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 180px;
+    border-top: 180px solid rgb(0, 66, 128);
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    
 }
 
+.triangulo::before{
+
+    position: absolute;
+    content: '';
+    border-bottom: 180px solid rgb(0, 66, 128);
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    bottom: 180px;
+    left: -90px;
+}
+ 
 .logoite{
     width: fit-content;
     background-color: white;
@@ -56,9 +95,11 @@ label,button{
 
 .forms{
     position: absolute;
-
     display: flex;
     flex-direction: column;
+    margin-top: 20%;
+    margin-right: 5%;
+    
     /* justify-content: end; */
 }
 
