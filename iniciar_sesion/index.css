@@ -1,20 +1,27 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: blue;
+
 }
 
 .panel {
     width: 100%;
     height: 100%;
-    background-image: url(./imagenes/PORTADA.jpg);
     display: block;
 }
+
 .contenedor {
+    background-image: url(/iniciar_sesion/imagenes/PORTADA.jpg);
+    background-position:center center ;
+    background-size: cover;
+    background-attachment: fixed;
+
+
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
+    
 }
 
 .triangle {
