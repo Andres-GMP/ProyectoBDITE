@@ -1,94 +1,30 @@
 .panel{
     background-color: #0F5FA9;
-    
+    margin: 50px;
+    padding: 1px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     border-radius: 10px;
     max-width: 100%;
     min-width: 300px;
-    padding: 20px;
-}
-
-.block1{
-    display: grid;
-    background-image: url("https://user-images.githubusercontent.com/88638634/158725380-a4d21072-643f-44df-95f8-b62336251f1a.jpg");
-}
-
-.izq1{
-grid-column: 1/2;
-padding: 50px;
-margin: 100px 50px 0px 100px;
-}
-
-.der2{
-/* padding: 50px; */
-grid-column: 2/2;
-display: grid;
-display: flex;
-justify-content: flex-end;
-
-
-
-}
-.triangulo{
- 
-
-    box-sizing: content-box;
-    border-width: 500px 180px 0;
-    border-style: solid;
     
     
-    /*
-    border-right: 550px solid white;
-    border-top: 275px solid transparent;
-    border-bottom: 315px solid transparent; 
-    grid-column: 1;
-    position: absolute;
-    margin-top: 0% ;
-    margin-right:0%;
-    */
-    
-
-    position: absolute;
-   
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    height: 0;
-    width: 180px;
-    border-top: 180px solid rgb(0, 66, 128);
-    border-left: 90px solid transparent;
-    border-right: 90px solid transparent;
+}
+.fondou{
+    background-size: 100%;
+    position:absolute;
     
 }
-
-.triangulo::before{
-
-    position: absolute;
-    content: '';
-    border-bottom: 180px solid rgb(0, 66, 128);
-    border-left: 180px solid transparent;
-    border-right: 180px solid transparent;
-    bottom: 180px;
-    left: -90px;
-}
- 
 .logoite{
-    width: fit-content;
-    background-color: white;
-    text-align: center;
-    padding: 18px;
     border-radius: 360px;
-    margin-bottom: 150px;
+    margin-right: 500px;
+    margin-left: 10px;
+    margin-bottom: 400px;
     border: 2px solid black;
     box-shadow: 0px 3px 3px 0px rgb(2, 2, 2);
-    opacity: 50%;
-    
-    
-}
-
-/*Imagen del ite*/
-.block1, .img{
-
-    -webkit-border-radius: 8px 0px 0px 8px;
+    opacity: 100%;
 }
 
 label,button{
@@ -96,24 +32,27 @@ label,button{
 }
 
 .forms{
-    position: absolute;
+    margin: 8px 0px 5px 5px;
+    padding: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
-    margin-right: 5%;
-    
-    /* justify-content: end; */
 }
-
 #boton-iniciar{
-
-    background-color: white;
     padding: 10px;
     border: solid 2px black;
     border-radius: 69px;
     cursor: pointer;
     margin-top: 5px;
-
+}
+#boton-regresar{
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 69px;
+    cursor: pointer;
+    margin-top: 5px;
 }
 .label{
 
@@ -141,6 +80,15 @@ label,button{
     */
     
 }
+.label.return{
+    margin-bottom:-300px;
+    margin-left: -1500px;
+}
+.label.sign, .label.return{
+    background-color: white;
+    color: #0F5FA9;
+    
+}
 
 .label:focus, .label:hover{
 
@@ -152,16 +100,30 @@ label,button{
     border: 3px solid #2A5D8D;
     filter: drop-shadow(0px 3px 3px #000000);
     box-shadow:inset 0 0 0.75rem rgb(112, 121, 238);
+    
 
 }
+.label.sign:focus,.label.sign:hover, .label.return:focus,.label.return:hover {
+    background-color: #0F5FA9;
+    color: #ffffff;
+    transition: 0.4s;
+    border: 3px solid #2A5D8D;
+    filter: drop-shadow(0px 3px 3px #000000);
+   
+}
+.label.email:focus, .label.email:hover{
+    background-color: #ffffff;
+    color: #0F5FA9;
 
+}
 
 ::placeholder{
     
     text-align: center;
-    color: rgb(177, 175, 172);
+    color: rgb(255, 255, 255);
     
 }
+
 
 .este{
 
@@ -175,9 +137,4 @@ label,button{
     box-shadow: 10px 10px 10px;
 
 }
-
-
-
-
-
 
