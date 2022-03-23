@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
-
+    background-color: #0F5FA9;
 }
 
 .panel {
@@ -15,11 +15,11 @@ html, body {
     background-position:center center ;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
-    
+    margin: 15px;
+    border-radius: 44px;
 }
 
 .triangle {
@@ -32,6 +32,10 @@ html, body {
 .box-blanco {
     background-color: white;
     opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo{
@@ -40,10 +44,15 @@ html, body {
 }
 
 .logoimagen{
-
     border-radius: 360px;
     background-color: white;
-    
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.9;
 }
 
 .logo img{
