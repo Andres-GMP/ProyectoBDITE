@@ -40,6 +40,11 @@ html, body {
 
 .logo{
 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    
 
 }
 
@@ -53,6 +58,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     opacity: 0.9;
+    margin-bottom: 150px;
 }
 
 .logo img{
