@@ -44,6 +44,7 @@ html, body {
     text-align: center;
     justify-content: center;
     align-items:center;
+    grid-template-rows: 10px 10px 10px;
     
 
 }
@@ -61,9 +62,25 @@ html, body {
     margin-bottom: 150px;
 }
 
-.logo img{
+.sublogoite{
+
+    position: relative;
+    margin-right: 150px;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+
+.imagenprimordial{
     width: 200px;
     height: 200px;
+}
+
+.subimgprim{
+
+height: 100px;
+width: 100px;
 }
 .label{
 
