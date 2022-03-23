@@ -86,3 +86,12 @@ input{
     width: 20;
 }
 
+.busqueda{
+    background-color: #0F5FA9;
+    padding: 10px;
+    color: white;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+
