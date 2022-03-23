@@ -7,10 +7,10 @@
     flex-direction: row;
     justify-content: left;
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 80%;
     min-width: 300px;
-    
-    
+    background-image:url(https://user-images.githubusercontent.com/88638634/158725380-a4d21072-643f-44df-95f8-b62336251f1a.jpg);
+    background-repeat: round;
 }
 .fondou{
     background-size: 100%;
@@ -31,15 +31,15 @@ label,button{
     display: flex;
 }
 
-.forms{
+.forms, .calis{
     margin: 8px 0px 5px 5px;
     padding: 50px;
     display: flex;
     align-items:center;
     justify-content: center;
-    display: flex;
     flex-direction: column;
 }
+
 #boton-iniciar{
     padding: 10px;
     border: solid 2px black;
@@ -47,16 +47,17 @@ label,button{
     cursor: pointer;
     margin-top: 5px;
 }
+
 #boton-regresar{
     padding: 10px;
     border: solid 2px black;
     border-radius: 69px;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 500px;
 }
+
 .label{
 
-    display: flex;
     border-radius: 69px;
     margin-bottom: 10px;
     margin-top: 3px;
@@ -80,10 +81,11 @@ label,button{
     */
     
 }
+
 .label.return{
-    margin-bottom:-300px;
-    margin-left: -1500px;
+    margin-left: -1950px;
 }
+
 .label.sign, .label.return{
     background-color: white;
     color: #0F5FA9;
@@ -91,7 +93,6 @@ label,button{
 }
 
 .label:focus, .label:hover{
-
     /*Mas elegante diria yo jiji*/
    /* box-shadow: inset 2px 12px 14px -7px rgb(41, 65, 143), 2px 2px 10px 2px rgb(41, 65, 143);*/
     background-color: white;
@@ -103,14 +104,16 @@ label,button{
     
 
 }
+
 .label.sign:focus,.label.sign:hover, .label.return:focus,.label.return:hover {
     background-color: #0F5FA9;
     color: #ffffff;
     transition: 0.4s;
     border: 3px solid #2A5D8D;
     filter: drop-shadow(0px 3px 3px #000000);
-   
+
 }
+
 .label.email:focus, .label.email:hover{
     background-color: #ffffff;
     color: #0F5FA9;
@@ -123,7 +126,6 @@ label,button{
     color: rgb(255, 255, 255);
     
 }
-
 
 .este{
 
