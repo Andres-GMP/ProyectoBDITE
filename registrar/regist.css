@@ -7,15 +7,11 @@
     flex-direction: row;
     justify-content: left;
     border-radius: 10px;
-    max-width: 80%;
+    max-width: 100%;
     min-width: 300px;
     background-image:url(https://user-images.githubusercontent.com/88638634/158725380-a4d21072-643f-44df-95f8-b62336251f1a.jpg);
     background-repeat: round;
-}
-.fondou{
-    background-size: 100%;
-    position:absolute;
-    
+    border: 10px solid #0F5FA9;
 }
 .logoite{
     border-radius: 360px;
