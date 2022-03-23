@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventario principal</title>
+</head>
+<body>
+    <header class = "Titulo"> <h1>INVENTARIO ITE</h1></header>
+    <nav><span>solo para navegar</span></nav>
+    <div class = "contenedor">
+        <section>section</section>
+            <aside>aside</aside>
+            <aside>Aquí irá la info</aside>
+            <div class="contForm">
+                <form  class="llenadoArticulo">
+                    <header class = "titForm"><h2 class = "centro">Registro de articulo</h2></header>
+                    <div class="izq">
+
+                        <label for="descripcion">Descripción
+                            <input  type="text" name="descripcion">
+                        </label>
+                        <br>
+                        <label for="idSep">ID SEP
+                            <input  type="text" name="idSep">
+                        </label>
+                        <br>
+                        <label for="marca">Marca
+                            <input  type="text" name="marca">
+                        </label>
+                        <br>
+                        <label for="modelo">Modelo
+                            <input  type="text" name="Modelo">
+                        </label>
+                        <br>
+                        <label for="Serie">Serie
+                            <input name = "Serie" type="text" >
+                        </label>
+                        <br>
+                        <label for="valor">Valor
+                            <input name = "valor" type="text" >
+                        </label>
+                        <br>
+                        <div class="cantId">
+                            <label for="cantidad">Cantidad
+                                <input type="number">
+                            </label>
+                        <label for="numId">#
+                            <input type="number" name="numId" disabled>
+                        </label>
+
+                        </div>
+                        
+                    </div>
+                    <div class="der">
+                        
+                        <label for="Myadquisicion">Adquisicion
+                            <input list="adquisicion" name = "Myadquisicion" >
+                            <datalist id = "adquisicion">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                            </datalist>
+                        </label>
+                        <br>
+                        <label for="area">Área
+                            <input  list="Myarea" name="area">
+                            <datalist id = "Myarea">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                            </datalist>
+                        </label>
+                        <br>
+                        <label for="resguardante">Resguardante
+                            <input  list="Myresg" name="resguardante">
+                            <datalist id = "Myresg">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                            </datalist>
+                        </label>
+                        <br>
+                        <label for="estatus">Estatus
+                            <input  list="Myestatus" name="estatus" > <span></span>
+                            <datalist id = "Myestatus">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                                <option value="algo">
+                            </datalist>
+                        </label>
+                        <br>
+                        <label for="fecha"> Fecha de adquisicion
+                            <input type="date">
+                        </label>
+                        <br>
+                        <label for="areatxt">Documentación Soporte
+                            <br>
+                            <textarea name="areatxt" id="" cols="30" rows="10"></textarea>
+                        </label>
+                    </div>
+                    <div class="btnCRUD">
+                        <input type="submit" name = "nuevo">
+                        <input type="submit" name = "reiniciar" id="">
+                        <input type="submit" name = "eliminar" >
+                    </div>
+                </form>
+            </div>
+    </div>
+    
+</body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,900&family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+</html>

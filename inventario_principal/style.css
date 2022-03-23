@@ -1,0 +1,88 @@
+html{
+    font-family: 'Lato', sans-serif;
+}
+.Titulo{
+    display: flex;
+    
+    justify-content: center;
+    background-color: #0F5FA9;
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+}
+
+nav{
+    
+    background-color: gray;
+}
+.contenedor{
+display: grid;
+background-color: white;
+padding: 10px;
+margin: 15px;
+}
+section{
+    /* grid-column: ; */
+    padding: 10px;
+    background: #0F5FA9;
+    border-radius: 10px;
+}
+aside{
+    grid-column: 3/3;
+
+}
+.contForm{
+    grid-column: 2/3;
+    background: #0F5FA9;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+}
+.conForm,.centro{
+color: white;
+padding: 10px;
+}
+.llenadoArticulo{
+padding: 10px;
+margin: 15px;
+display: grid;
+color: white;
+}
+.izq{
+    
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-end;
+}
+.der{
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-end;
+}
+.btnCRUD{
+    grid-column: 3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+input{
+    background: #6AB3F5;
+    box-shadow: #092f4e;
+    border-radius: 5px;
+    height: 30px;
+    width: 20;
+}
+
