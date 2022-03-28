@@ -17,7 +17,7 @@ html, body {
     background-attachment: fixed;
     height: 100%;
     display: grid;
-    grid-template-columns: .01fr 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
     margin: 15px;
     border-radius: 44px;
 }
@@ -66,10 +66,12 @@ html, body {
 
 .sublogoite{
 
-    grid-row:2 ;
+    position: relative;
     margin-right: 150px;
     display: flex;
     align-self: flex-start;
+    top:0;
+    left:0;
 
 }
 
@@ -77,6 +79,20 @@ html, body {
 .imagenprimordial{
     width: 200px;
     height: 200px;
+}
+.imagensecundaria{
+
+    width: 100px;
+    height: 100px;
+}
+
+.controlimgsec{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    top:22px;
+    right: 22px;
+
 }
 
 .subimgprim{
