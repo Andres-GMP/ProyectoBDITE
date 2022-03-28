@@ -8,17 +8,23 @@
     <title>Inventario principal</title>
 </head>
 <body>
-    <header class = "Titulo"> <h1>INVENTARIO ITE</h1></header>
+    
+    <header class = "Titulo" > 
+        <span class = "logo">
+            <img src="https://user-images.githubusercontent.com/92224971/160319554-960facc2-f2e9-4d75-ba1d-d296a430a0d8.png" alt="" width="100px" height="100px">
+        </span>
+        <h1 class = "TitPrincipal">INVENTARIO ITE</h1></header>
+    
     <nav><span>solo para navegar</span></nav>
     <div class = "contenedor">
         <section>section</section>
-            <aside class = "busqueda" >
-                <input type="search" name = "searchArt"><span><button class = "icono busqueda"><img src="" alt=""></button></span>
-            </aside>
+            
             <aside>
-                
+                info aquí
             </aside>
+            <!-- Este div contiene el formulario-->
             <div class="contForm">
+                <!-- El formulario esta seccionado por 2 filas y 4 columnas -->
                 <form  class="llenadoArticulo">
                     <header class = "titForm"><h2 class = "centro">Registro de articulo</h2></header>
                     <div class="izq">
@@ -38,26 +44,34 @@
                         <label for="modelo">Modelo
                             <input  type="text" name="Modelo">
                         </label>
-                        <br>
-                        <label for="Serie">Serie
-                            <input name = "Serie" type="text" >
-                        </label>
-                        <br>
-                        <label for="valor">Valor
-                            <input name = "valor" type="text" >
-                        </label>
-                        <br>
-                        <div class="cantId">
-                            <label for="cantidad">Cantidad
-                                <input type="number">
-                            </label>
-                        <label for="numId">#
-                            <input type="number" name="numId" disabled>
-                        </label>
-
+                         <br>
                         </div>
                         
+                        <div class = "centro">
+                            <label for="Serie">Serie
+                                <input name = "Serie" type="text" >
+                            </label>
+                            <br>
+                            <label for="valor">Valor
+                                <input name = "valor" type="text" >
+                            </label>
+                            <br>
+                            <div class="cantId">
+                                <label for="cantidad">Cantidad
+                                    <input type="number">
+                                </label>
+                                <label for="numId">#
+                                    <input type="number" name="numId" disabled>
+                                </label>    
+                            </div>
+                            <br>
+                            <label for="fecha"> Fecha de adquisicion
+                                <input type="date">
+                            </label>
+                            <br>
+                            
                     </div>
+
                     <div class="der">
                         
                         <label for="Myadquisicion">Adquisicion
@@ -106,23 +120,24 @@
                                 <option value="algo">
                             </datalist>
                         </label>
-                        <br>
-                        <label for="fecha"> Fecha de adquisicion
-                            <input type="date">
-                        </label>
-                        <br>
                         <label for="areatxt">Documentación Soporte
                             <br>
                             <textarea name="areatxt" id="" cols="30" rows="10"></textarea>
                         </label>
                     </div>
                     <div class="btnCRUD">
-                        <input type="submit" name = "nuevo">
-                        <input type="submit" name = "reiniciar" id="">
-                        <input type="submit" name = "eliminar" >
+                        <aside class = "busqueda" >
+                            <input type="search" name = "searchArt"><span><button class = "icono busqueda"><img src="" alt=""></button></span>
+                        </aside>
+                        <div>
+                            <input type="submit" name = "nuevo">
+                            <input type="submit" name = "reiniciar" id="">
+                            <input type="submit" name = "eliminar" >        
+                        </div>
                     </div>
                 </form>
             </div>
+
     </div>
     
 </body>
