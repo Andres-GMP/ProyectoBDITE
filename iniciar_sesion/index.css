@@ -17,7 +17,7 @@ html, body {
     background-attachment: fixed;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: .01fr 1fr 0.5fr 1fr;
     margin: 15px;
     border-radius: 44px;
 }
@@ -40,17 +40,17 @@ html, body {
 
 .logo{
 
+    display: grid;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items:center;
-    grid-template-rows: 10px 10px 10px;
     
-
 }
 
 .logoimagen{
-    border-radius: 360px;
+
+    border-radius:360px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -60,11 +60,13 @@ html, body {
     align-items: center;
     opacity: 0.9;
     margin-bottom: 100px;
+   
+
 }
 
 .sublogoite{
 
-    position: relative;
+    grid-row:2 ;
     margin-right: 150px;
     display: flex;
     align-self: flex-start;
@@ -79,8 +81,8 @@ html, body {
 
 .subimgprim{
 
-height: 100px;
-width: 100px;
+    height: 100px;
+    width: 150px;
 }
 .label{
 
