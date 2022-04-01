@@ -30,7 +30,7 @@ html{
     width: 120px;
     height: 120px;
     background-color: #002D57;
-    grid-column: 1/2;
+    grid-column: 1/4;
     border-radius: 10px;
 }
 .TitPrincipal{
@@ -106,15 +106,22 @@ color: white;
     padding: 20px;
     align-items: flex-end;
 }
-.der{
-    grid-column: 3/4;
+.preder{
+    grid-column: 3/5;
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: flex-end;
 }
-.btnCRUD{
-    grid-column: 4/4;
+.der{
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-end;
+}
+.postder{
+    grid-column: 5/5;
     display: flex;
     /* display: grid; */
     justify-content: flex-start;
@@ -137,6 +144,26 @@ input{
     border-radius: 5px;
     height: 30px;
     width: 20;
+}
+
+input.canti{
+    background: #e7e7e7;
+    height: 30px;
+    width: 10;
+}
+input.numero{
+    background: #7c7c7c;
+}
+input.fechadq{
+    background: #7c7c7c;
+}
+.labeldeId{
+    color: rgb(0, 0, 0);
+}
+
+.acciones{
+    background: #95b1bb;
+    color: white;
 }
 
 .busqueda{

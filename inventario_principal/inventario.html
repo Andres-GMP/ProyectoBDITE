@@ -20,15 +20,17 @@
         <section>section</section>
             
             <aside>
-                info aquí
+                <div>
+                    <input type="submit" name = "actualizar" class="acciones">        
+                </div>
             </aside>
             <!-- Este div contiene el formulario-->
             <div class="contForm">
                 <!-- El formulario esta seccionado por 2 filas y 4 columnas -->
                 <form  class="llenadoArticulo">
                     <header class = "titForm"><h2 class = "centro">Registro de articulo</h2></header>
+                    
                     <div class="izq">
-
                         <label for="descripcion">Descripción
                             <input  type="text" name="descripcion">
                         </label>
@@ -53,27 +55,26 @@
                             </label>
                             <br>
                             <label for="valor">Valor
-                                <input name = "valor" type="text" >
+                                <input name = "valor" type="text" placeholder="$">
+                                
                             </label>
                             <br>
                             <div class="cantId">
                                 <label for="cantidad">Cantidad
-                                    <input type="number">
+                                    <input type="number" class="canti">
                                 </label>
-                                <label for="numId">#
-                                    <input type="number" name="numId" disabled>
+                                <label for="numId" class="labeldeId">#
+                                    <input type="number" class="numero" name="numId" disabled>
                                 </label>    
                             </div>
                             <br>
                             <label for="fecha"> Fecha de adquisicion
-                                <input type="date">
+                                <input type="date" class="fechadq">
                             </label>
                             <br>
-                            
                     </div>
 
-                    <div class="der">
-                        
+                    <div class="preder">
                         <label for="Myadquisicion">Adquisicion
                             <input list="adquisicion" name = "Myadquisicion" >
                             <datalist id = "adquisicion">
@@ -120,21 +121,26 @@
                                 <option value="algo">
                             </datalist>
                         </label>
+                    </div>
+
+                    <div class="der">
                         <label for="areatxt">Documentación Soporte
                             <br>
                             <textarea name="areatxt" id="" cols="30" rows="10"></textarea>
                         </label>
                     </div>
-                    <div class="btnCRUD">
+
+                    <div class="postder">
                         <aside class = "busqueda" >
                             <input type="search" name = "searchArt"><span><button class = "icono busqueda"><img src="" alt=""></button></span>
                         </aside>
                         <div>
-                            <input type="submit" name = "nuevo">
-                            <input type="submit" name = "reiniciar" id="">
-                            <input type="submit" name = "eliminar" >        
+                            <input type="submit" name = "nuevo" class="acciones" >
+                            <input type="submit" name = "reiniciar" id="" class="acciones">
+                            <input type="submit" name = "eliminar" class="acciones">        
                         </div>
                     </div>
+
                 </form>
             </div>
 
