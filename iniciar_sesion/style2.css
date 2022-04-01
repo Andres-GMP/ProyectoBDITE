@@ -1,25 +1,58 @@
-.prueba{
-    position: relative;
-    z-index: 5;
-    height: 250px;
-    width: 300px;
-    color: #FFF;
-    font-size: 400%;
-    padding: 20px;
-}
-h1{
-    color: black;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif; 
 }
 
-.prueba::before{
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(315deg, #fff, #d7e1ec 75%);
+}
 
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: blue;
-    opacity: 20%;
+.contenedor .boton{
+    height: 60px;
+    width: 80px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all .3s ease-out;
+    margin-top: 5px;
+}
+
+.contenedor .boton:hover{
+ width: 200px;
+}
+
+.contenedor .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+}
+
+.contenedor .boton span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.contenedor .boton:nth-child(1):hover .icono{
+    background-color: #149000;
+    color: #fff;
+}
+
+.icono{
+    align-content: center;
 }
