@@ -34,8 +34,7 @@ body{
 .contenedor .boton .icono{
     display: inline-block;
     height: 60px;
-    width: 60px;
-    border-radius: 50px;
+    width: 80px;
     box-sizing: border-box;
     line-height: 60px;
     text-align: center;
@@ -50,6 +49,16 @@ body{
 
 .contenedor .boton:nth-child(1):hover .icono{
     background-color: #149000;
+    color: #fff;
+}
+
+.contenedor .boton:nth-child(2):hover .icono{
+    background-color: #EAD51C;
+    color: #fff;
+}
+
+.contenedor .boton:nth-child(3):hover .icono{
+    background-color: #EA1C1C;
     color: #fff;
 }
 
