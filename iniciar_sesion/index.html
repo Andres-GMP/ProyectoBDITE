@@ -1,39 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <!--Este es un css para poder poner el icono de iniciar session-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <title class="title">Inventario ITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="main">
 
-    <div class="panel"> 
-        
-        <div class="block1">
-            <div class="logoite"><img src="https://user-images.githubusercontent.com/88638634/158725727-a9e3824c-4556-4bb6-8f11-696f717cfe9e.png" alt="" height="200" width="200"></div>
-        
-            <div class="triangle"></div>
+        <div class="form_container">
+            <h1 class ="form_container_title" >INVENTARIO ITE</h1>
+            <!-- login -->
+            <form action="" id="form_login">
+                <label for="">Correo <input type="text" placeholder="ejemplo@ite.edu.mx"></label>
+                <label for="">Contraseña <input type="password" placeholder="*******************" ></label>
+                
+
+                <input type="submit" value="Iniciar Sesión">
+
+                <a href=""  id="register">¿No tiene ninguna cuenta?</a>
+                <a href="" class="olvido" >¿Olvidó su contraseña?</a>
+            </form>
+            <!-- register -->
+            <form action="" id="form_register">
+                <label for="">Correo <input type="text" placeholder="ejemplo@ite.edu.mx"></label>
+                <label for="">Contraseña <input type="password" placeholder="*******************" ></label>
+                <label for="">Confirmar Contraseña <input type="password" placeholder="*******************" ></label>
+
+                <input type="submit" value="Registrarse">
+
+                <a href="" id="login">¿Ya tienes una cuenta?</a>
+                <a href="" class="olvido">¿Olvidó su contraseña?</a>
+            </form>
             
-        <div class="block2"> 
-            
-
-           <div class="forms">
-
-            <input type="text" name="" class="label user" placeholder="USERNAME" minlength="3" maxlength="18">
-            <input type="password" name="password" class="label contra"placeholder=" PASSWORD" minlength="3">    
-            <input type="button" value="Login" id="boton-iniciar">
-
-           </div>
-        
+            <div class="form_container_logo">
+                <img src="images/logo_ite.png" alt="">
+            </div>
         </div>
-        
-    </div>
 
-</div>
-    
+        <div class="logoTecnm">
+            <img src="images/logo_tecnm.png" alt="">
+        </div>
+        <div class="frame_black">
+            <div class="password_miss">
+                <div class="header"><h2>RECUPERAR CONTRASEÑA</h2>
+                    <a href="" class="salir_btn"></a>
+                </div>
+                <div class="recuperar_content">
+                    <form action="">
+                        <label for="">Correo Electronico <input type="text" placeholder="ejemplo@ite.edu.mx"></label>
+                        <p class="texto_recuperar">Se enviara un mensaje a tu correo con la contraseña de tu cuenta.
+                        <input type="submit" value="Recuperar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"  type = "module"></script>
 </body>
 </html>
