@@ -30,7 +30,6 @@ html{
     width: 120px;
     height: 120px;
     background-color: #002D57;
-    grid-column: 1/4;
     border-radius: 10px;
 }
 .TitPrincipal{
@@ -63,7 +62,7 @@ aside{
     grid-column: 3/3;
 
 }
-.contForm{
+.contenedor__form{
     grid-column-start: 2;
     grid-column-end: 4;
     background: #0F5FA9;
@@ -71,7 +70,7 @@ aside{
     font-family: 'Lato', sans-serif;
     margin-left: 10px;
 }
-.titForm{
+.form__titulo{
     grid-column-start:1 ;
     grid-column-end: 5;
     display: flex;
@@ -80,17 +79,17 @@ aside{
     background-color: #0063BE;
     
 }
-.conForm,.centro{
+.contenedor__form,.form__titulo-h{
 color: white;
 padding: 10px;
 }
-.llenadoArticulo{
+.contenedor__form-form{
 /* padding: 10px;
 margin: 15px; */
 display: grid;
 color: white;
 }
-.izq{
+.form__column-1{
     
     grid-column: 1;
     display: flex;
@@ -98,7 +97,7 @@ color: white;
     padding: 20px;
     align-items: flex-end;
 }
-.centro{
+.form__column-2{
     grid-column-start: 2;
     grid-column-end:3 ;
     display: flex;
@@ -106,22 +105,25 @@ color: white;
     padding: 20px;
     align-items: flex-end;
 }
-.preder{
-    grid-column: 3/5;
+.form__column-3{
+    grid-column-start: 3;
+    grid-column-end:4 ;
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: flex-end;
 }
-.der{
-    grid-column: 4/5;
+.form__column-4{
+    grid-column-start:4;
+    grid-column-end:5;
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: flex-end;
 }
-.postder{
-    grid-column: 5/5;
+.form__column-5{
+    grid-column-start: 5;
+    grid-column-end:6 ;
     display: flex;
     /* display: grid; */
     justify-content: flex-start;
