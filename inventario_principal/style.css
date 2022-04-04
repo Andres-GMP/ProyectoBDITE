@@ -148,21 +148,22 @@ input{
     width: 20;
 }
 
-input.canti{
+input.col2__span-input1{
     background: #e7e7e7;
     height: 30px;
     width: 10;
 }
-input.numero{
+input.col2__span-input2{
     background: #7c7c7c;
-}
-input.fechadq{
-    background: #7c7c7c;
-}
-.labeldeId{
-    color: rgb(0, 0, 0);
+    width: 35px;
 }
 
+.col2__span-label2{
+    color: rgb(0, 0, 0);
+}
+input.col2__input3{
+    background: #7c7c7c;
+}
 .acciones{
     background: #95b1bb;
     color: white;
