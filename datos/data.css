@@ -1,0 +1,139 @@
+html{
+    font-family: 'Lato', sans-serif;
+    background-color: #002D57;;
+}
+
+.Titulo{
+    display: flex;
+    display: grid;
+    background-color: #0F5FA9;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    align-items: center;
+}
+
+.TitPrincipal{
+grid-column: 2/2;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding-left: 20px;
+margin-right: 1800px;
+}
+
+nav{
+    
+    background-color: gray;
+}
+
+.contenedor{
+display: grid;
+padding: 10px 10px 10px 0px;
+margin: 15px 15px 15px 0px;
+}
+
+section{
+    /* En esta sección irá el menú de nevegación */
+    padding: 10px;
+    background: #0F5FA9;
+    border-radius: 0px 10px 10px 0px;
+}
+aside{
+    /* En esta se mostrará la información del articulo */
+    grid-row: 2;
+    grid-column: 3/3;
+
+}
+
+.contenedor__form{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: #0F5FA9;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 10px;
+}
+.form__titulo{
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.contenedor__form,.form__titulo-h{
+    color: white;
+    padding: 10px;
+    }
+    .contenedor__form-form{
+    /* padding: 10px;
+    margin: 15px; */
+    display: grid;
+    color: white;
+    }
+
+    .form__column-1{
+    
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+        
+    }
+    .form__column-2{
+        grid-column-start: 2;
+        grid-column-end:3 ;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    
+    textarea {
+        padding: 10px;
+        max-width: 100%;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #999;
+    }
+    input{
+        background: #6AB3F5;
+        box-shadow: #092f4e;
+        border-radius: 5px;
+        height: 30px;
+        width: 20;
+    }
+    
+    input.canti{
+        background: #e7e7e7;
+        height: 30px;
+        width: 10;
+    }
+    input.numero{
+        background: #7c7c7c;
+    }
+    input.fechadq{
+        background: #7c7c7c;
+    }
+    .labeldeId{
+        color: rgb(0, 0, 0);
+    }
+    
+    .acciones{
+        background: #95b1bb;
+        color: white;
+    }
+    
+    .busqueda{
+        background-color: #0F5FA9;
+        padding: 10px;
+        color: white;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        padding-top: 15px;
+    }

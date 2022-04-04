@@ -19,127 +19,131 @@
     <div class = "contenedor">
         <section>section</section>
             
-            <aside class="contenedor__informacion">
+        <aside class="contenedor__informacion">     
+        </aside>
+
+        <!-- Este div contiene el formulario-->
+        <div class="contenedor__form">
+            <!-- El formulario esta seccionado por 2 filas y 4 columnas -->
+            <form  class="contenedor__form-form">
+                <header class = "form__titulo"><h2 class = "form__titulo-h">Registro de articulo</h2></header>
                 
-            </aside>
-            <!-- Este div contiene el formulario-->
-            <div class="contenedor__form">
-                <!-- El formulario esta seccionado por 2 filas y 4 columnas -->
-                <form  class="contenedor__form-form">
-                    <header class = "form__titulo"><h2 class = "form__titulo-h">Registro de articulo</h2></header>
+                <div class="form__column-1">
+                    <label for="col1__input1" class="form__column-1-label1">Descripción
+                        <input  type="text" name="col1__input1">
+                    </label>
+                    <br>
+                    <label for="col1__input2" class="form__column-1-label2">ID SEP
+                        <input  type="text" name="col1__input2">
+                    </label>
+                    <br>
+                    <label for="col1__input1">Marca
+                        <input  type="text" name="marca">
+                    </label>
+                    <br>
+                    <label for="modelo">Modelo
+                        <input  type="text" name="Modelo">
+                    </label>
+                     <br>
+                </div>
                     
-                    <div class="form__column-1">
-                        <label for="col1__input1" class="form__column-1-label1">Descripción
-                            <input  type="text" name="col1__input1">
+                    <div class = "form__column-2">
+                        <label for="Serie">Serie
+                            <input name = "Serie" type="text" >
                         </label>
                         <br>
-                        <label for="col1__input2" class="form__column-1-label2">ID SEP
-                            <input  type="text" name="col1__input2">
+                        <label for="valor">Valor
+                            <input name = "valor" type="text" placeholder="$">
+                            
                         </label>
                         <br>
-                        <label for="col1__input1">Marca
-                            <input  type="text" name="marca">
-                        </label>
-                        <br>
-                        <label for="modelo">Modelo
-                            <input  type="text" name="Modelo">
-                        </label>
-                         <br>
-                        </div>
-                        
-                        <div class = "form__column-2">
-                            <label for="Serie">Serie
-                                <input name = "Serie" type="text" >
-                            </label>
-                            <br>
-                            <label for="valor">Valor
-                                <input name = "valor" type="text" placeholder="$">
-                                
-                            </label>
-                            <br>
-                            <div class="cantId">
-                                <label for="cantidad">Cantidad
-                                    <input type="number" class="canti">
-                                </label>
-                                <label for="numId" class="labeldeId">#
-                                    <input type="number" class="numero" name="numId" disabled>
-                                </label>    
-                            </div>
-                            <br>
-                            <label for="fecha"> Fecha de adquisicion
-                                <input type="date" class="fechadq">
-                            </label>
-                            <br>
-                    </div>
 
-                    <div class="form__column-3">
-                        <label for="Myadquisicion">Adquisicion
-                            <input list="adquisicion" name = "Myadquisicion" >
-                            <datalist id = "adquisicion">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                            </datalist>
-                        </label>
-                        <br>
-                        <label for="area">Área
-                            <input  list="Myarea" name="area">
-                            <datalist id = "Myarea">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                            </datalist>
-                        </label>
-                        <br>
-                        <label for="resguardante">Resguardante
-                            <input  list="Myresg" name="resguardante">
-                            <datalist id = "Myresg">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                            </datalist>
-                        </label>
-                        <br>
-                        <label for="estatus">Estatus
-                            <input  list="Myestatus" name="estatus" > <span class = "algo"></span>
-                            <datalist id = "Myestatus">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                                <option value="algo">
-                            </datalist>
-                        </label>
-                        <br>
-                    </div>
-                    <div class="form__column-4">
-                        <label for="areatxt">Documentación Soporte
-                            <br>
-                            <textarea name="areatxt" id="" cols="30" rows="10"></textarea>
-                        </label>
-                    </div>
-                    <div class="form__column-5">
-                        <aside class = "busqueda" >
-                            <input type="search" name = "searchArt"><span><button class = "icono busqueda"><img src="" alt=""></button></span>
-                        </aside>
-                        <div>
-                            <input type="submit" name = "nuevo" class="acciones" >
-                            <input type="submit" name = "reiniciar" id="" class="acciones">
-                            <input type="submit" name = "eliminar" class="acciones">        
+                        <div class="cantId">
+                            <label for="cantidad">Cantidad
+                                <input type="number" class="canti">
+                            </label>
+                            <label for="numId" class="labeldeId">#
+                                <input type="number" class="numero" name="numId" disabled>
+                            </label>    
                         </div>
-                    </div>
 
-                </form>
-            </div>
+                        <br>
+                        <label for="fecha"> Fecha de adquisicion
+                            <input type="date" class="fechadq">
+                        </label>
+                        <br>
+                </div>
+
+                <div class="form__column-3">
+                    <label for="Myadquisicion">Adquisicion
+                        <input list="adquisicion" name = "Myadquisicion" >
+                        <datalist id = "adquisicion">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                        </datalist>
+                    </label>
+                    <br>
+                    <label for="area">Área
+                        <input  list="Myarea" name="area">
+                        <datalist id = "Myarea">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                        </datalist>
+                    </label>
+                    <br>
+                    <label for="resguardante">Resguardante
+                        <input  list="Myresg" name="resguardante">
+                        <datalist id = "Myresg">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                        </datalist>
+                    </label>
+                    <br>
+                    <label for="estatus">Estatus
+                        <input  list="Myestatus" name="estatus" > <span class = "algo"></span>
+                        <datalist id = "Myestatus">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                            <option value="algo">
+                        </datalist>
+                    </label>
+                    <br>
+                </div>
+
+                <div class="form__column-4">
+                    <label for="areatxt">Documentación Soporte
+                        <br>
+                        <textarea name="areatxt" id="" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+                
+                <div class="form__column-5">
+                    <aside class = "busqueda" >
+                        <input type="search" name = "searchArt"><span><button class = "icono busqueda"><img src="" alt=""></button></span>
+                    </aside>
+
+                    <div>
+                        <input type="submit" name = "nuevo" class="acciones" >
+                        <input type="submit" name = "reiniciar" id="" class="acciones">
+                        <input type="submit" name = "eliminar" class="acciones">        
+                    </div>
+                </div>
+            </form>
+        </div>
 
     </div>
     
