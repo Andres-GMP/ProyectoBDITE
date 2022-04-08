@@ -14,14 +14,19 @@ html{
     background-size: 50%;
     align-items: center;
 }
-
+.logo{
+    background-color: #0C3E6C;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   padding-left: 25px;
+}
 .TitPrincipal{
 grid-column: 2/2;
 display: flex;
 justify-content: flex-start;
 align-items: center;
 padding-left: 20px;
-margin-right: 1800px;
+margin-right: 1420px;
 }
 
 nav{
@@ -38,8 +43,10 @@ margin: 15px 15px 15px 0px;
 section{
     /* En esta sección irá el menú de nevegación */
     padding: 10px;
-    background: #0F5FA9;
-    border-radius: 0px 10px 10px 0px;
+    background: #0C3E6C;
+    border-radius: 0px 4px 4px 0px;
+    width: 143px;
+    color: white;
 }
 aside{
     /* En esta se mostrará la información del articulo */
@@ -52,15 +59,16 @@ aside{
     grid-column-start: 2;
     grid-column-end: 4;
     background: #0F5FA9;
-    border-radius: 10px;
+  
     font-family: 'Lato', sans-serif;
-    margin-left: 10px;
+    margin-left: -642px;
+    
 }
 .form__titulo{
     grid-column-start:1 ;
     grid-column-end: 5;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -92,48 +100,40 @@ aside{
         padding: 20px;
         align-items: flex-start;
     }
-    
-    textarea {
-        padding: 10px;
-        max-width: 100%;
-        line-height: 1.5;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        box-shadow: 1px 1px 1px #999;
-    }
+
     input{
-        background: #6AB3F5;
+        background: #ffffff;
         box-shadow: #092f4e;
         border-radius: 5px;
         height: 30px;
         width: 20;
     }
+
+    .guardado{
+        background: #0C3E6C;
+        color: #ffffff;
+        border-color: #ffffff;
+        border-radius: 5px;
+        width: 80px;
+        height: 25px;
+    }
+    .hr1{
+        width: 1900px;
+        position: absolute;
+        margin-top: 75px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+    .hr2{
+        width: 1900px;
+        position: absolute;
+        margin-top: 445px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+    }
     
-    input.canti{
-        background: #e7e7e7;
-        height: 30px;
-        width: 10;
-    }
-    input.numero{
-        background: #7c7c7c;
-    }
-    input.fechadq{
-        background: #7c7c7c;
-    }
-    .labeldeId{
-        color: rgb(0, 0, 0);
-    }
-    
-    .acciones{
-        background: #95b1bb;
+    .form__title-h{
         color: white;
+        padding-top: 10px;
     }
     
-    .busqueda{
-        background-color: #0F5FA9;
-        padding: 10px;
-        color: white;
-        margin-bottom: 25px;
-        border-radius: 10px;
-        padding-top: 15px;
-    }
