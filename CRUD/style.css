@@ -1,0 +1,575 @@
+/* reset */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+/* end reset */
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --yellow:rgb(223, 223, 0);
+}
+html{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #002140;
+    min-width: 1260px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 80px auto;
+}
+header{
+    position: relative;
+    grid-area:1/1/1/9;
+    background-image: linear-gradient(#007bb871, #007bb871), url(images/fondoTitulo.jpg) ;
+    background-position: 0px -130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0,.3);
+    z-index: 999;
+}
+.img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0C3E6C;
+    height: 100%;
+    width: 80px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container img{
+    width: 50px;
+}
+.title{
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.title b{
+    color: white;
+}
+
+
+.aside-left{
+    grid-area:2/1/2/2;
+    min-width: 140px;
+    background-color: #003D76;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.aside-left-content h2{
+    font-size: 18px;
+}
+.aside-left-content h3{
+    font-size: 16px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+}
+.aside-left-content a{
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.aside-left-content a[selected = "true"]{
+    
+    background-color: var(--yellow);
+    color: black;
+
+    
+}
+.aside-left-content a:hover{
+    background-color:rgba(248, 248, 77,.5) ;
+
+}
+.aside-left-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+}
+
+.container-CRUD{
+    grid-area:2/2/2/9;
+    overflow: hidden;
+    max-height: inherit;
+    box-sizing: border-box;
+    display: grid;
+}
+/* Registro */
+.registro-container{
+    grid-area:1/1/1/1;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: min-content auto;
+    grid-template-areas: 
+    "registro   registro"
+    "tabla      info";
+    
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-right: 20px;
+    max-height: inherit;
+}
+
+.form-registro{
+    grid-area:registro;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+.form-registro h3{
+    width: 100%;
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 10px 0px;
+}
+.container-registro-articulo{
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.input-registro-container{
+    display: grid;
+    grid-template-columns: 60px repeat(3,100px) 30px 100px 100px min-content;
+    grid-template-rows:  repeat(4,20px);
+    grid-template-areas: 
+    "descripcion-t  descripcion    descripcion     descripcion      icon-adq    adquisicion     documentacion-t busqueda"
+    "marca-t        marca          modelo          serie            icon-area   area            documentacion   busqueda"
+    "idsep-t        idsep          costo           numero           icon-res    resguardante    documentacion   busqueda"
+    "cantidad-t     cantidad       fecha           fecha            icon-est    estatus         documentacion   busqueda"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+
+.input-registro-container input,.input-registro-container select {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.input-registro-container input{
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+.input-registro-container label{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 10px;
+}
+
+label[for="id-sep"]{
+    grid-area: idsep-t;
+}
+label[for="descripcion"]{
+    grid-area: descripcion-t;
+}
+label[for="marca"]{
+    grid-area: marca-t;
+}
+input[name="descripcion"]{
+    grid-area: descripcion;
+}
+input[name="marca"]{
+    grid-area: marca;
+}
+input[name="id-sep"]{
+    grid-area: idsep;
+}
+input[name="cantidad"]{
+    grid-area: cantidad;
+}
+input[name="modelo"]{
+    grid-area: modelo;
+}
+input[name="serie"]{
+    grid-area: serie;
+}
+label[for="cantidad"]{
+    grid-area: cantidad-t;
+}
+input[name="numero"]{
+    grid-area: numero;
+}
+.icon-adq{
+    grid-area:icon-adq;
+}
+.icon-area{
+    grid-area:icon-area;
+}
+.icon-res{
+    grid-area:icon-res;
+}
+.icon-est{
+    grid-area:icon-est;
+}
+select[name="adquisicion"]{
+    grid-area: adquisicion;
+}
+select[name="area"]{
+    grid-area: area;
+}
+select[name="resguardante"]{
+    grid-area: resguardante;
+}
+select[name="estatus"]{
+    grid-area: estatus;
+}
+
+input[name="precio"]{
+    grid-area: costo;
+}
+label[for="documentacion"]{
+    grid-area: documentacion-t;
+    text-align: left;
+    
+}
+textarea[name="documentacion"]{
+    grid-area: documentacion;
+    resize: none;
+
+}
+
+input[name="fecha"]{
+    grid-area: fecha;
+}
+
+.registro-busqueda{
+    grid-area: busqueda;
+    background-color: rgb(140, 215, 255);
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registro-busqueda h4{
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 600;
+
+}
+
+.registro-busqueda input[type="text"]{
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+}
+.registro-busqueda-inputBusqueda{
+    position: relative;
+  width: 100%;
+}
+.registro-busqueda-btnFiltrar{
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 4px;
+    top: 4px;
+    background-color: #0F5FA9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px;
+    
+}
+
+.registro-busqueda-btnBuscar{
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    
+}
+
+
+.registro-busqueda-btnEliminar{
+    background-color: #EA1C1C;
+}
+.registro-busqueda-btnNuevo{
+    background-color: #149000;
+}
+.registro-busqueda-btnLimpiar{
+    background-color: var(--yellow);
+}
+.registro-busqueda-btnContainer a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    padding:  5px 10px;
+    font-size: 12px;
+   
+
+}
+.registro-busqueda a img{
+    width: 15px;
+}
+.registro-busqueda-btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+tr{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+.tabla-registro-row-header{
+    background-color: var(--yellow);
+    height: 35px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  
+}
+.tabla-registro table{
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    
+}
+.tabla-registro tbody{
+    width: inherit;
+}
+.tabla-registro th{
+    width: 8.33%;
+    text-align: center;
+    font-size: 8px;
+    height: inherit;
+    border-left: 1px solid rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    
+    
+}
+td{
+    width: 8.33%;
+    text-align: center;
+    font-size: 7px;
+    height: inherit;
+    border-left: 1px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+th:first-child,td:first-child{
+    border: none;
+}
+.tabla-registro{
+    width: 100%;
+    grid-area:tabla;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height:inherit ;
+}
+.table-data-container{
+    overflow: hidden;
+    overflow-y: scroll;
+    
+
+}
+.data{
+    width: 100%;
+    font-size: 5px;
+}
+
+.w{
+    background-color: white;
+}
+.b{
+    background-color: rgb(140, 215, 255);
+}
+.info-registro h4{
+    background-color: var(--yellow);
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+.info-registro{
+    position: relative;
+    grid-area: info;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.btnPin{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: all .5s ease;
+    border-radius:5px ;
+    padding: 3px;
+    background-color: white;
+}
+.btnPin img,.fixed img{
+    width: 15px;
+    
+
+}
+.fixed{
+    
+    position: fixed;
+    top:300px;
+    right: -30px;
+    z-index: 9999;
+    transition: all .5s ease;
+    border-radius:5px ;
+    padding: 3px;
+    background-color: white;
+}
