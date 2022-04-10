@@ -573,3 +573,87 @@ th:first-child,td:first-child{
     padding: 3px;
     background-color: white;
 }
+
+.info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 12px;
+}
+.info-arriba{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(5,min-content);
+    grid-template-areas: 
+    "descripcion-info   img-info"
+    "idSep-info         img-info"
+    "marca-info         img-info"
+    "modelo-info        img-info"
+    "fecha-info         fecha-info";
+    
+    text-align: right;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.descripcion-info{
+    grid-area: descripcion-info;
+}
+.idSep-info{
+    grid-area: idSep-info;
+}
+.marca-info{
+    grid-area: marca-info;
+}
+.modelo-info{
+    grid-area: modelo-info;
+}
+.fecha-info{
+    grid-area: fecha-info;
+}
+.info-arriba-imgContent{
+    grid-area: img-info;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.info-abajo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4,20px);
+    grid-template-areas: 
+    "serie-info         adquisicion-info"
+    "valor-info         area-info"
+    "cantidad-info      resguardante-info"
+    "estatus-info       estatus-info";
+    margin-top: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-right: 10px;
+}
+.serie-info{
+    grid-area:serie-info;
+}
+.adquisicion-info{
+    grid-area:adquisicion-info;
+}
+.valor-info{
+    grid-area:valor-info;
+}
+.area-info{
+    grid-area:area-info;
+}
+.cantidad-info{
+    grid-area:cantidad-info;
+}
+.resguardante-info{
+    grid-area:resguardante-info;
+}
+.estatus-info{
+    grid-area:estatus-info;
+    text-align: center;
+}
