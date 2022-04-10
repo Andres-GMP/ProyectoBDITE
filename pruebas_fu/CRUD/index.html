@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventario ITE</title>
+</head>
+<body>
+    
+    <div class="main">
+        <header>
+            <div class="img-container"><img src="images/caja.png" alt=""></div> <h1 class="title">INVENTARIO ITE - <b> Area Registrada </b></h1>
+        </header>
+        <aside class="aside-left">
+            <section class="aside-left-top">
+                <div class="aside-left-usaurio aside-left-content">
+                    <img src="images/user.png" alt="" class="aside-userImage"> 
+                    <h2 class="aside-userName">
+                        User - Area
+                    </h2>
+                </div>
+                <div class="aside-left-inventario aside-left-content" >
+                    <h3>INVENTARIO</h3>
+                    <a href="" selected = "true">Registrar Articulo</a>
+                </div>
+                <div class="aside-left-Busqueda aside-left-content">
+                    <h3>BUSQUEDA</h3>
+                    <a href="">Busqueda Rapida</a>
+                    <a href="">Busqueda Avanzada</a>
+                </div>
+            </section>
+            
+            <section class="aside-left-bottom">
+                <div class="aside-left-configuracion aside-left-content">
+                    <h3>CONFIGURACIÓN</h3>
+                    <a href="">Cuenta</a>
+                    <a href="">Datos</a>
+                </div>
+                
+            </section>
+        </aside>
+        <div class="container-CRUD">
+            <div class="registro-container">
+                <div class="form-registro">
+                    <h3>Registro Articulo</h3>
+                    <div class="container-registro-articulo">
+                        <div class="input-registro-container">
+
+                            <label for="descripcion">Descripción</label>
+                            <input type="text" name="descripcion">
+
+                            <label for="marca">Marca</label>
+                            <input type="text" name="marca">
+
+                            <label for="id-sep">ID SEP</label>
+                            <input type="text" name="id-sep">
+
+                            <label for="cantidad">Cantidad</label>
+                            <input type="text" name="cantidad">
+
+                            <input type="text" name="modelo" placeholder="Modelo">
+                            <input type="text" name="serie" placeholder="Serie">
+                            <input type="text" name="precio" placeholder="$">
+                            <input type="text" name="numero" placeholder="#">
+                            
+                            <input type="date" name="fecha">
+                            
+                            <select name="adquisicion" id=""></select>
+                            <select name="area" id=""></select>
+                            <select name="resguardante" id=""></select>
+                            <select name="estatus" id=""></select>
+                    
+                            <label for="documentacion">Documentacion</label>
+                            <textarea name="documentacion" id="" cols="30" rows="10"></textarea>
+                            
+                            <img src="images/icon/icon-1.png" class="icon-adq" alt="">
+                            <img src="images/icon/icon-2.png" class="icon-area" alt="">
+                            <img src="images/icon/icon-3.png" class="icon-res" alt="">
+                            <img src="images/icon/icon-4.png" class="icon-est" alt="">
+                            
+                            <div class="registro-busqueda">
+                                <h4>Busqueda por número de inventario</h4>
+                                <div class="registro-busqueda-inputBusqueda">
+                                    <a href="" class="registro-busqueda-btnFiltrar"><img src="images/icon/icon-filter.svg" alt=""></a>
+                                    <input type="text">
+                                    <a href="" class="registro-busqueda-btnBuscar"><img src="images/icon/icon-search.svg" alt=""></a>
+                                </div>
+                                
+                                <div class="registro-busqueda-btnContainer">
+                                    <a href="" class="registro-busqueda-btnEliminar">Eliminar <img src="images/icon/icon-eliminar.svg" alt=""></a>
+                                    <a href="" class="registro-busqueda-btnNuevo">Nuevo <img src="images/icon/icon-crear.svg" alt=""></a>
+                                    <a href="" class="registro-busqueda-btnLimpiar">Limpiar <img src="images/icon/icon-actualizar.svg" alt=""></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tabla-registro">
+                    <table>
+                        
+                            <tr class="tabla-registro-row-header">
+                                <th>#INV</th>
+                                <th>CANTIDAD</th>
+                                <th>DESCRIPCIÓN</th>
+                                <th>MODELO</th>
+                                <th>SERIE</th>
+                                <th>VALOR</th>
+                                <th>MARCA</th>
+                                <th>ADQUISICION</th>
+                                <th>FECH. ADQ.</th>
+                                <th>AREA</th>
+                                <th>RESGUARDANTE</th>
+                                <th>ESTATUS</th>
+                            </tr>
+                            
+                                <tr class="data b">
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                    <td>prueba1</th>
+                                    <td>prueba1</td>
+                                    <td>prueba1</td>
+                                </tr>
+                                <tr class="data w">
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                    <td>prueba2</th>
+                                    <td>prueba2</td>
+                                    <td>prueba2</td>
+                                </tr>
+                                <tr class="data b">
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                    <td>prueba3</th>
+                                    <td>prueba3</td>
+                                    <td>prueba3</td>
+                                </tr>
+                                <tr class="data w">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                <tr class="data b">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                <tr class="data w">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                <tr class="data b">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                <tr class="data w">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                <tr class="data b">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                <tr class="data w">
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                    <td>prueba4</th>
+                                    <td>prueba4</td>
+                                    <td>prueba4</td>
+                                </tr>
+                                
+
+                        
+                    </table>
+                </div>
+                <div class="info-registro">
+                    <h4>  Información Articulo</h4>
+                    <a href="" class="btnPin" ><img src="images/icon/icon-pin.svg" alt=""></a>
+                </div>
+            </div>
+            <a href="" class="fixed"><img src="images/icon/icon-pin.svg" alt=""></a>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
