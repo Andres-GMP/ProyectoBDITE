@@ -40,6 +40,27 @@ body{
     text-align: center;
 }
 
+.contenedor .boton .icono {
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+}
+
+#crear{
+    background-color: #149000;
+}
+
+#limpiar{
+    background-color: #EAD51C;
+}
+
+#eliminar{
+    background-color: #EA1C1C;
+}
+
 .contenedor .boton span{
     font-size: 20px;
     font-weight: 500;
