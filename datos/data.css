@@ -19,6 +19,7 @@ html{
     padding-top: 30px;
     padding-bottom: 30px;
    padding-left: 25px;
+   display: flex;
 }
 .TitPrincipal{
 grid-column: 2/2;
@@ -26,7 +27,7 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 padding-left: 20px;
-margin-right: 1420px;
+margin-right: 1220px;
 }
 
 nav{
@@ -35,9 +36,10 @@ nav{
 }
 
 .contenedor{
+display: flex;
 display: grid;
-padding: 10px 10px 10px 0px;
-margin: 15px 15px 15px 0px;
+padding: 10px 0px 10px 0px;
+margin: 15px 0px 15px 0px;
 }
 
 section{
@@ -45,13 +47,16 @@ section{
     padding: 10px;
     background: #0C3E6C;
     border-radius: 0px 4px 4px 0px;
-    width: 143px;
+    width: 233px;
     color: white;
+    
+    
 }
 aside{
     /* En esta se mostrará la información del articulo */
     grid-row: 2;
     grid-column: 3/3;
+    display: flex;
 
 }
 
@@ -59,7 +64,7 @@ aside{
     grid-column-start: 2;
     grid-column-end: 4;
     background: #0F5FA9;
-  
+    display: flex;
     font-family: 'Lato', sans-serif;
     margin-left: -642px;
     
@@ -75,6 +80,7 @@ aside{
 .contenedor__form,.form__titulo-h{
     color: white;
     padding: 10px;
+    display: flex;
     }
     .contenedor__form-form{
     /* padding: 10px;
@@ -107,6 +113,7 @@ aside{
         border-radius: 5px;
         height: 30px;
         width: 20;
+        display: flex;
     }
 
     .guardado{
@@ -116,24 +123,43 @@ aside{
         border-radius: 5px;
         width: 80px;
         height: 25px;
+        display: flex;
     }
     .hr1{
-        width: 1900px;
+        width: 1700px;
         position: absolute;
         margin-top: 75px;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 5px;
+        display: flex;
     }
     .hr2{
-        width: 1900px;
+        width: 1700px;
         position: absolute;
         margin-top: 445px;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 5px;
+        display: flex;
     }
     
     .form__title-h{
         color: white;
         padding-top: 10px;
+        display: flex;
     }
-    
+    @media only screen and (max-width:800px) {
+        /* For tablets: */
+        .main {
+          width: 80%;
+          padding: 0;
+        }
+        .right {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width:500px) {
+        /* For mobile phones: */
+        .menu, .main, .right {
+          width: 100%;
+        }
+      }
