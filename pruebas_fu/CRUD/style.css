@@ -109,7 +109,7 @@ input, select {
     padding: 0;
 }
 :root{
-    --yellow:rgb(223, 223, 0);
+    --yellow:rgb(68 148 179)
 }
 html{
     font-family: 'Lato', sans-serif;
@@ -428,22 +428,27 @@ input[name="fecha"]{
     background-color: #149000;
 }
 .registro-busqueda-btnLimpiar{
-    background-color: var(--yellow);
+    background-color: rgb(231 230 28);
 }
 .registro-busqueda-btnContainer a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    text-decoration: none;
-    color: black;
+    text-decoration:none;
     font-weight: 600;
-    border-radius: 5px;
-    padding:  5px 10px;
     font-size: 12px;
-   
+    color:#000000;
+    border: #000 solid 2px;
+    padding:4px;
+    border-radius: 10px;
 
 }
+
+.registro-busqueda-imgContainer{
+    background-color: white;
+    border-radius: 10px;
+    padding:3px;
+    display: flex;
+    align-items: flex-end;
+}
+
 .registro-busqueda a img{
     width: 15px;
 }
