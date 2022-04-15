@@ -217,6 +217,7 @@ header{
     max-height: inherit;
     box-sizing: border-box;
     display: grid;
+    padding: 20px;
 }
 /* Registro */
 .registro-container{
@@ -233,6 +234,7 @@ header{
     column-gap: 20px;
     margin-right: 20px;
     max-height: inherit;
+
 }
 
 .form-registro{
@@ -550,8 +552,8 @@ th:first-child,td:first-child{
 }
 .btnPin{
     position: absolute;
-    top: 10px;
-    left: 5px;
+    top: 3px;
+    right: 5px;
     transition: all .5s ease;
     border-radius:5px ;
     padding: 3px;
@@ -657,3 +659,320 @@ th:first-child,td:first-child{
     grid-area:estatus-info;
     text-align: center;
 }
+/* Consultar */
+.consultas-container{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 33% 66%;
+    grid-template-areas: 
+    "filtrar-consultar      informacion-consultar"
+    "tabla-consultar        informacion-consultar";
+    row-gap:20px ;
+    column-gap:20px ;
+}
+.filtrar-container,.informacion-container,.tabla-container{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.informacion-container{
+    grid-area: informacion-consultar;
+}
+.tabla-container{
+    grid-area: tabla-consultar;
+}
+
+.filtrar-container-header,.tabla-container-header,.informacion-container-header{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.filtrar-container{
+    grid-area:filtrar-consultar;
+}
+.filtrar-container-inputs{
+    grid-area:filtrar-consultar;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1fr,6);
+    grid-template-rows: repeat(1fr,2);
+    grid-template-areas:
+    "area-consultar             adq-consultar           campos-consultar    descripcion-consultar       marca-consultar     btnConsultar-consultar"
+    "resguardante-consultar     estatus-consultar       fecha-consultar     costo-consultar             serie-consultar     btnLimpiar-consultar";
+    row-gap: 5px;
+    column-gap: 5px;
+
+}
+.filtrar-container-inputs label{
+    font-weight: 500;
+    font-size: 12px;
+}
+.filtrar-container-inputs input,.filtrar-container-inputs select{
+    width: 115px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.filtrar-container-inputs-area{
+    grid-area:area-consultar;
+}
+.filtrar-container-inputs-resguardante{
+    grid-area:resguardante-consultar;
+}
+.filtrar-container-inputs-adq{
+    grid-area:adq-consultar;
+}
+.filtrar-container-inputs-estatus{
+    grid-area:estatus-consultar;
+}
+.filtrar-container-inputs-campos{
+    grid-area:campos-consultar;
+}
+.filtrar-container-inputs-fecha{
+    grid-area:fecha-consultar;
+}
+.filtrar-container-inputs-descripcion{
+    grid-area:descripcion-consultar;
+}
+.filtrar-container-inputs-costo{
+    grid-area:costo-consultar;
+}
+.filtrar-container-inputs-marca{
+    grid-area:marca-consultar;
+}
+.filtrar-container-inputs-serie{
+    grid-area:serie-consultar;
+}
+
+.filtrar-container-inputs-btnConsultar{
+    grid-area:btnConsultar-consultar;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.filtrar-container-inputs-btnLimpiar{
+    grid-area:btnLimpiar-consultar;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.filtrar-container-inputs-btnConsultar-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #62D0FF;
+    box-sizing:border-box ;
+    border-radius: 2px 0px 0px 2px;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filtrar-container-inputs-btnConsultar-text{
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+.iconify{
+    color: black;
+}
+.filtrar-container-inputs-btnConsultar a{
+    position: relative;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing:border-box ;
+    border: 2px solid black;
+    border-radius: 5px;
+ 
+
+}
+
+.filtrar-container-inputs-btnLimpiar-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #edff62;
+    box-sizing:border-box ;
+    border-radius: 2px 0px 0px 2px;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtrar-container-inputs-btnLimpiar a{
+    position: relative;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing:border-box ;
+    border: 2px solid black;
+    border-radius: 5px;
+ 
+
+}
+
+.filtrar-container-inputs-btnLimpiar-text{
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+.informacion-container-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(1fr,10) ;
+    grid-template-areas:
+    "busqueda-consultar-informacion         busqueda-consultar-informacion"
+    "marca-consultar-informacion            imagen-consultar-informacion"
+    "modelo-consultar-informacion           imagen-consultar-informacion"
+    "serie-consultar-informacion            imagen-consultar-informacion"
+    "descripcion-consultar-informacion      adq-consultar-informacion"
+    "valor-consultar-informacion            area-consultar-informacion"
+    "cantidad-consultar-informacion         resguardante-consultar-informacion"
+    "estatus-consultar-informacion          fecha-consultar-informacion"
+    "soporte-consultar-informacion          soporte-consultar-informacion"
+    "soporte-consultar-informacion          soporte-consultar-informacion";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.container-input-information{
+    position: relative;
+}
+.container-input-information label{
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    background-color: white;
+    
+}
+.container-input-information input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    box-sizing:  border-box;
+    font-size: 12px;
+
+}
+
+.busqueda-consultar-informacion{
+    grid-area: busqueda-consultar-informacion;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(1fr,2);
+    grid-template-areas:
+    "label      label"
+    "input      button";
+    column-gap: 10px ;
+    row-gap: 2px ;
+    padding-right: 10px;
+}
+.busqueda-consultar-informacion-label{
+    grid-area: label;
+    font-size: 12px;
+}
+.busqueda-consultar-informacion input{
+    height: 25px;
+    grid-area: input;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+}
+.busqueda-consultar-informacion button{
+    width: 100%;
+    height: 100%;
+    grid-area:button;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #62D0FF;
+    border: 1px solid black;
+}
+
+.descripcion-consultar-informacion{
+    grid-area: descripcion-consultar-informacion;
+}
+
+.marca-consultar-informacion{
+    grid-area: marca-consultar-informacion;
+}
+
+.modelo-consultar-informacion{
+    grid-area: modelo-consultar-informacion;
+}
+
+.serie-consultar-informacion{
+    grid-area: serie-consultar-informacion;
+}
+
+.adq-consultar-informacion{
+    grid-area: adq-consultar-informacion;
+}
+
+.fecha-consultar-informacion{
+    grid-area: fecha-consultar-informacion;
+}
+
+.estatus-consultar-informacion{
+    grid-area: estatus-consultar-informacion;
+}
+
+.cantidad-consultar-informacion{
+    grid-area: cantidad-consultar-informacion;
+}
+
+.valor-consultar-informacion{
+    grid-area: valor-consultar-informacion;
+}
+
+.area-consultar-informacion{
+    grid-area: area-consultar-informacion;
+}
+
+.resguardante-consultar-informacion{
+    grid-area: resguardante-consultar-informacion;
+}
+
+.soporte-consultar-informacion{
+    grid-area: soporte-consultar-informacion;
+}
+.imagen-consultar-informacion{
+    grid-area: imagen-consultar-informacion;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
