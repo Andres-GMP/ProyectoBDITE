@@ -1,0 +1,276 @@
+/* reset */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+/* end reset */
+ul {
+    list-style-type: none;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --yellow:rgb(223, 223, 0);
+}
+html{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    min-width: 1260px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "aside      nav-frame"
+    "aside      frame-container";
+}
+
+
+
+
+/* Aside left nav */
+.aside-left{
+    grid-area: aside;
+    min-width: 140px;
+    background-color: #0C3E6C;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    /* box-shadow: 3px 3px 8px rgba(0,0,0,.3); */
+}
+.aside-left-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside-left-logo img{
+    width: 50px;
+}
+.aside-left-logo h1{
+    margin-right: 10px;
+    font-weight: 400;
+}
+.aside-left-content a{
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.aside-left-content a[selected = "true"]{
+    
+    background-color: var(--yellow);
+    color: black;
+
+    
+}
+.aside-left-content a:hover{
+    background-color:rgba(248, 248, 77,.5) ;
+
+}
+.aside-left-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+.aside-left-nav{
+    width: 100%;
+    height: 100%;
+}
+.aside-left-nav{
+    font-size: 14px;
+}
+.aside-left-nav a{
+    text-decoration: none;
+    color:white;
+    
+}
+.aside-left-nav-list-btnItem{
+    margin-left: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: color .25s ease;
+}
+.aside-left-nav-list-btnItem:hover{
+    color: rgb(174, 174, 174);
+}
+.aside-left a[selected="true"]{
+    background-color: #6AB3F5;
+    border-radius: 10px;
+    color: #000;
+    border: 5px solid #6AB3F5;
+    box-sizing:border-box;
+    
+}
+.aside-left-nav .iconify{
+    margin-right: 10px;
+}
+.aside-left-nav-list{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-left-nav-list-top-container-item li,.aside-left-nav-list-bottom li{
+    margin-top: 10px;
+}
+.aside-left-nav-list-top-container-item{
+    margin-top: 15px;
+}
+
+.aside-left-nav-list-btnHeader{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.aside-userName{
+    font-size: 16px;
+}
+
+/* nav-frame */
+.nav-frame ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nav-frame ul li a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 4px solid #6AB3F5;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+.nav-frame{
+    background-color: #0C3E6C;
+    grid-area: nav-frame;
+    width: 100%;
+    height: 100%;
+}
+/*  Frame Container */
+.frame-container{
+    grid-area:frame-container;
+    overflow: hidden;
+    max-height: inherit;
+    box-sizing: border-box;
+    background-color: white;
+}
