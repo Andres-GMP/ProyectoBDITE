@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header"></div>
+        <div class="left"></div>
+        <div class="content">
+            <div class="frame">
+                <div class="inputs"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    .main{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 80px auto;
+    }
+    .header{
+        grid-area:1/1/1/6;
+        background-color: red;
+    }
+    .left{
+        background-color: blue;
+        min-width: 200px;
+        
+    }
+    .content{
+        display: grid;
+        background-color: black;
+        grid-area:2/2/2/6;
+
+    }
+    .frame{
+        grid-area: 1/1/1/1;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputs{
+        width: 80%;
+        height: 200px;
+        background-color: black;
+    }
+</style>
+</html>

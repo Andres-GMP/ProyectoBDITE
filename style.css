@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Roboto';
+    color: white;
+}
+
+body {
+    min-width: 800px;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 0, 26, 0.5), rgba(16, 0, 26, 0.5)),
+        url(images/img1.png);
+    transition: background-image 1s ease;
+    background-size: cover;
+    display: flex;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: inherit;
+    background-color: #10a7d448;
+    backdrop-filter: blur(5px);
+
+}
+
+.form_container_title {
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px rgba(0, 16, 88, 0.808);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+form input,
+.logoTecnm,
+.form_container {
+    box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, .25);
+}
+
+input::selection {
+    border: none;
+}
+
+form input[type=text],
+form input[type=password],
+.register-combobox {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+    border: none;
+    display: block;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+form input[type=text],
+form input[type=password]:focus {
+    border: none;
+    outline: none;
+}
+
+form input[type=submit] {
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #E0FF87;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color .7s ease,
+        background-color .7s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+form input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 20px 0;
+}
+
+.logoTecnm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.logoTecnm img {
+    width: 60%;
+}
+a:hover{
+    color: #E0FF87;
+}
+
+form a {
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 5px;
+    color: black;
+    transition: color .3s ease;
+}
+
+.frame_black{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.recuperar_content{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto_recuperar{
+    margin-top: 15px;
+    color: rgb(40, 40, 40);
+    
+}
+.recuperar_content input[type="text"]{
+    border: 2px solid black;
+}
+.password_miss{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(9, 38, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0px 0px 10px rgba(0, 16, 88, 0.808);
+    font-size: 15px;
+    
+}
+
+.salir_btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 0px;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    background-color: rgb(235, 32, 32);
+    box-shadow:3px 3px 5px rgba(0, 16, 88, 0.808);
+    transition: border .1s ease-in-out;
+    
+}
+
+.salir_btn:hover{
+    border: 2px solid white;
+}
+
+
+@media (max-width:900px) {
+    .logoTecnm {
+        display: none;
+    }
+
+    .form_container {
+        margin: auto;
+        height: 95vh;
+        border-radius: 20px;
+    }
+
+    .form_container_logo {
+        border-radius: 20px 0px 20px 0px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .form_container_title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1200px) {
+    .form_container_title {
+        font-size: 30px;
+    }
+}
