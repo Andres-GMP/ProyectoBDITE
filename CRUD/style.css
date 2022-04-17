@@ -85,11 +85,6 @@ abbr[title], dfn[title] {
   cursor:help;
 }
 
-table {
-  border-collapse:collapse;
-  border-spacing:0;
-}
-
 /* change border colour to suit your needs */
 hr {
   display:block;
@@ -260,7 +255,7 @@ body{
     margin-left: 20px;
 }
 
-.nav-frame ul li a:focus{
+.nav-frame ul li a:hover{
     border-bottom: 4px solid #6AB3F5;
 }
 
@@ -270,6 +265,11 @@ body{
     width: 100%;
     height: 100%;
 }
+
+.nav-frame [selected = "true"]{
+    border-bottom: 4px solid #6AB3F5;
+}
+
 /*  Frame Container */
 .frame-container{
     grid-area:frame-container;
@@ -283,8 +283,8 @@ body{
 /* Mis Articulos - Form-Container */
 
 .mis-articulos-form-container{
-    margin : 25px;
-    padding: 30px;
+    margin: 30px;
+    padding: 40px;
     background-color: white;
     border-radius: 10px;
 }
@@ -297,15 +297,14 @@ body{
 /* Mis Articulos - Descripcion - Articulo */
 
 .informacion-container{
-    grid-area: informacion-consultar;
     border-radius: 10px;
     background-color: white;
-    margin: 25px;
-
+    margin: 30px;
+    
 }
 
 .filtrar-container-header,.tabla-container-header,.informacion-container-header{
-    background-color: var(--yellow);
+    background-color: #D8B500;
     width: 100%;
     height: 40px;
     display: flex;
@@ -319,25 +318,10 @@ body{
     grid-area:filtrar-consultar;
 }
 
-.informacion-container-content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(1fr,10) ;
-    grid-template-areas:
-    "busqueda-consultar-informacion         busqueda-consultar-informacion"
-    "marca-consultar-informacion            imagen-consultar-informacion"
-    "modelo-consultar-informacion           imagen-consultar-informacion"
-    "serie-consultar-informacion            imagen-consultar-informacion"
-    "descripcion-consultar-informacion      adq-consultar-informacion"
-    "valor-consultar-informacion            area-consultar-informacion"
-    "cantidad-consultar-informacion         resguardante-consultar-informacion"
-    "estatus-consultar-informacion          fecha-consultar-informacion"
-    "soporte-consultar-informacion          soporte-consultar-informacion"
-    "soporte-consultar-informacion          soporte-consultar-informacion";
-    column-gap: 10px;
-    row-gap: 10px;
+.Descripcion-container-content{
     margin: 10px;
     padding-right: 10px;
+    width: 300px;
 }
 
 .btnPin{
@@ -351,7 +335,6 @@ body{
 
 .btnPin img,.fixed img{
     width: 15px;
-
 }
 
 /* Mis Articulos - Agregar */
@@ -368,6 +351,51 @@ body{
     display: flex;
     flex-direction: column;
     font-weight: 600;
-    font-size: 13px;
+
 }
+
+.agregar-documentacion{
+    height: 200px;
+}
+
+#form_agregar input{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#agregar-adquisicion{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button.registrar-articulos-btnagregar{
+    padding: 20px 297px 15px 297px;
+    border-radius: 10px;
+    background-color: #07457F;
+    color: white;
+}
+
+
+/* Mis Articulos - Descripcion */
+
+td.id_sep{
+    padding: 5px 10px 8px 15px;
+    border-radius: 10px 0px 0px 10px;
+    background-color:#80C9FF;
+}
+
+td.descripcion{
+    padding: 10px 10px 3px 30px;
+    border-radius: 0px 10px 10px 0px;
+    background-color:#80C9FF;
+}
+
+table{
+    border-spacing: 0px 10px;
+}
+
 
