@@ -272,5 +272,35 @@ body{
     overflow: hidden;
     max-height: inherit;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #002140;
+    display: flex;
 }
+
+/* Mis Articulos - Form-Container */
+
+.mis-articulos-form-container{
+    margin : 25px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mis-articulos-form-container-title{
+    font-size: 20px;
+    text-decoration:underline;
+}
+/* Mis Articulos - Agregar */
+
+#form_agregar{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+#form_agregar label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 13px;
+}
+
