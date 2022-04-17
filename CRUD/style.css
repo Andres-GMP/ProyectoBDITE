@@ -273,4 +273,26 @@ body{
     max-height: inherit;
     box-sizing: border-box;
     background-color: white;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-color: #002140;
+
+}
+
+.div-section-left{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+.div-section-right{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.div-section-right-subinfo{
+    background-color: #FCFF58;
+    padding: 20px;
+    
+    border-radius: 10px 10px 0px 0px;
 }
