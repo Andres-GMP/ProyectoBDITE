@@ -256,10 +256,14 @@ body{
 .nav-frame ul li a{
     color: white;
     text-decoration: none;
-    border-bottom: 4px solid #6AB3F5;
     border-radius: 2px;
     margin-left: 20px;
 }
+
+.nav-frame ul li a:focus{
+    border-bottom: 4px solid #6AB3F5;
+}
+
 .nav-frame{
     background-color: #0C3E6C;
     grid-area: nav-frame;
@@ -289,12 +293,75 @@ body{
     font-size: 20px;
     text-decoration:underline;
 }
+
+/* Mis Articulos - Descripcion - Articulo */
+
+.informacion-container{
+    grid-area: informacion-consultar;
+    border-radius: 10px;
+    background-color: white;
+    margin: 25px;
+
+}
+
+.filtrar-container-header,.tabla-container-header,.informacion-container-header{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.filtrar-container{
+    grid-area:filtrar-consultar;
+}
+
+.informacion-container-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(1fr,10) ;
+    grid-template-areas:
+    "busqueda-consultar-informacion         busqueda-consultar-informacion"
+    "marca-consultar-informacion            imagen-consultar-informacion"
+    "modelo-consultar-informacion           imagen-consultar-informacion"
+    "serie-consultar-informacion            imagen-consultar-informacion"
+    "descripcion-consultar-informacion      adq-consultar-informacion"
+    "valor-consultar-informacion            area-consultar-informacion"
+    "cantidad-consultar-informacion         resguardante-consultar-informacion"
+    "estatus-consultar-informacion          fecha-consultar-informacion"
+    "soporte-consultar-informacion          soporte-consultar-informacion"
+    "soporte-consultar-informacion          soporte-consultar-informacion";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.btnPin{
+    position: absolute;
+    right: 5px;
+    transition: all .5s ease;
+    border-radius:5px ;
+    padding: 3px;
+    background-color: white;
+}
+
+.btnPin img,.fixed img{
+    width: 15px;
+
+}
+
 /* Mis Articulos - Agregar */
 
 #form_agregar{
     display: flex;
     flex-wrap: wrap;
     padding-top: 25px;
+    row-gap: 25px;
+    column-gap: 25px;
 }
 
 #form_agregar label{
