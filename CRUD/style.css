@@ -271,6 +271,7 @@ body{
 }
 
 /*  Frame Container */
+
 .frame-container{
     grid-area:frame-container;
     overflow: hidden;
@@ -287,10 +288,11 @@ body{
     padding: 40px;
     background-color: white;
     border-radius: 10px;
+    width: 70%;
 }
 
 .mis-articulos-form-container-title{
-    font-size: 20px;
+    font-size: 30px;
     text-decoration:underline;
 }
 
@@ -300,7 +302,7 @@ body{
     border-radius: 10px;
     background-color: white;
     margin: 30px;
-    
+    width: 25%;
 }
 
 .filtrar-container-header,.tabla-container-header,.informacion-container-header{
@@ -321,7 +323,9 @@ body{
 .Descripcion-container-content{
     margin: 10px;
     padding-right: 10px;
-    width: 300px;
+    width: 92%;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .btnPin{
@@ -339,12 +343,13 @@ body{
 
 /* Mis Articulos - Agregar */
 
-#form_agregar{
+#form_agregar #form_agregar_contenedor{
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 25px;
-    row-gap: 25px;
-    column-gap: 25px;
+    padding-top: 35px;
+    row-gap: 57px;
+    float: left;
+    flex-direction: column;
+    padding-right: 4%;
 }
 
 #form_agregar label{
@@ -358,16 +363,24 @@ body{
     height: 200px;
 }
 
-#form_agregar input{
-    width: 200px;
-    height: 35px;
+
+input[type="text" i] {
+    width: 307px;
+    height: 50px;
     border-radius: 5px;
     border: 1px solid black;
 }
 
-#agregar-adquisicion{
-    width: 200px;
-    height: 35px;
+input[type="textarea" i] {
+    width: 307px;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#agregar-select{
+    width: 307px;
+    height: 50px;
     border-radius: 5px;
     border: 1px solid black;
 }
@@ -377,6 +390,8 @@ button.registrar-articulos-btnagregar{
     border-radius: 10px;
     background-color: #07457F;
     color: white;
+    width: 100%;
+    margin-top: 15%
 }
 
 
@@ -398,4 +413,5 @@ table{
     border-spacing: 0px 10px;
 }
 
+/* Mis Articulos - Descripcion Scroll Bar */
 

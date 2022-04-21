@@ -112,19 +112,34 @@
                 <!-- Agregar -->
                 <form action="" id="form_agregar">
 
-                    <label for="">Descripción <input type="text"></label>
-                    <label for="">Costo <input type="text"></label>
-                    <label for="">Fecha Adquisición <input type="text"></label>
-                    <label for="">Forma Adquisición <select name="forma-adquisicion" id="agregar-adquisicion">
-                        <option value="forma-adquisicion"></option>
-                        <option value="forma-adquisicion"></option>
-                    </select></label>
-                    <label for="">Marca <input type="text"></label>
-                    <label for="">Documentacion Soporte <input type="text" ></label>
-                    <label for="">Estatus <input type="text"></label>
-                    <label for="">Modelo <input type="text"></label>
-                    <label for="">Area <input type="text"></label>
-                    <label for="">Serie <input type="text"></label>
+                    <div id="form_agregar_contenedor">
+                        <label for="">Descripción <input type="text" ></label>
+                        <label for="">Forma Adquisición <select name="forma-select" id="agregar-select">
+                            <option value="forma-adquisicion"></option>
+                            <option value="forma-adquisicion"></option>
+                        </select></label>
+                        <label for="">Estatus <select name="estatus" id="agregar-select">
+                            <option value="estatus"></option>
+                            <option value="estatus"></option>
+                        </select></label>
+                        <label for="">Area <select name="area-articulo" id="agregar-select">
+                            <option value="area-articulo"></option>
+                            <option value="area-articulo"></option>
+                        </select></label></label>
+                    </div>
+
+                    <div id="form_agregar_contenedor">
+                        <label for="">Costo <input type="text"></label>
+                        <label for="">Marca <input type="text"></label>
+                        <label for="">Modelo <input type="text"></label>
+                        <label for="">Serie <input type="text"></label>
+                    </div>
+                    
+                    <div id="form_agregar_contenedor">
+                        <label for="">Fecha Adquisición <input type="text"></label>
+                        <label for="">Documentacion Soporte <input type="textarea" id="documentacion" ></label>
+                    </div> 
+
                     <button class="registrar-articulos-btnagregar">Agregar</button>
                     
                 </form>
