@@ -413,5 +413,113 @@ table{
     border-spacing: 0px 10px;
 }
 
-/* Mis Articulos - Descripcion Scroll Bar */
+/* Mis Articulos - Botones*/
 
+
+
+.registro-busqueda-btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.registro-busqueda-btnContainer .registro-busqueda-btn{
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    transition: all .3s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registro-busqueda-btnContainer .registro-busqueda-btn .icono {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro-busqueda-btnContainer span{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.registro-busqueda-btnContainer .registro-busqueda-btn:hover{
+    width: 150px;
+}
+
+.registro-busqueda-imgContainer{
+    background-color: white;
+    border-radius: 10px;
+    padding:3px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.registro-busqueda a img{
+    width: 15px;
+}
+
+#btn-agregar{
+    background-color: #149000;
+    border: black solid 2px;
+}
+#btn-agregar:hover{
+    background-color: white;
+    border: black solid 2px;
+}
+
+#btn-limpiar{
+    background-color: #EAD51C;
+    border: black solid 2px;
+}
+#btn-limpiar:hover{
+    background-color: white;
+    border: black solid 2px;
+}
+
+#btn-eliminar{
+    background-color: #EA1C1C;
+    border: black solid 2px;
+}
+#btn-eliminar:hover{
+    background-color: white;
+    border: black solid 2px;
+}
+
+#btn-valeresguardo{
+    background-color: #DB752B;
+    border: black solid 2px;
+}
+
+#btn-valeresguardo:hover{
+    background-color: white;
+    border: black solid 2px;
+}
+
+.registro-busqueda-btnContainer .registro-busqueda-btn:nth-child(1):hover .icono{
+    background-color: #149000;
+}
+
+.registro-busqueda-btnContainer .registro-busqueda-btn:nth-child(2):hover .icono{
+    background-color: #EAD51C;
+}
+
+.registro-busqueda-btnContainer .registro-busqueda-btn:nth-child(3):hover .icono{
+    background-color: #EA1C1C;
+}
+
+
+.registro-busqueda-btnContainer .registro-busqueda-btn:nth-child(4):hover .icono{
+    background-color: #DB752B;
+}
