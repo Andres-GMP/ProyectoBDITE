@@ -280,7 +280,7 @@ body{
     display:grid;
     grid-template-columns: 25% 25%;
     grid-template-rows: auto;
-    padding: 10%;
+    padding: 5%;
     gap: 5%;
 }
 
@@ -309,22 +309,26 @@ body{
     display:grid;
     gap: 5%;
 }
-input{
+input {
     height: 30px;
+    
 }
 input, textarea{
     border-radius: 4%;
-}
 
-.grid div{
-    
+}
+.none{
+    border: none;
+    width: 100%;
 }
 
 /*agregar imagen */
 .imgs{
-    padding: 14.85%;
+    padding: 18.715%;
     padding-left: 0%;
     padding-right: 0%;
+    margin-bottom: -.484%;
+    margin-top: 2.075%;
     border: solid 1px rgb(0, 0, 0);
   }
   .imgs:hover{
@@ -370,4 +374,14 @@ input, textarea{
 .red:hover{
     background-color: #6B0000;
     transition: all .2s ease-out;
+  }
+  fieldset{
+      border: 2px solid black;
+      border-radius: 4%;
+  }
+  .f1{
+      margin-top: 2%;
+  }
+  legend{
+      margin-left: 5%;
   }

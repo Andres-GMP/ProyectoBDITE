@@ -111,30 +111,76 @@
                 <!-- <label>ID-SEP</label>-->
                 <div class="part1">
                     <label>ID-SEP</label>
-                    <input type=“text”  name="Id">
+                    <input type=“text”  name="Id" class="sep">
                     <button type="button" class="reload">Refresh</button>
                 </div>
 
                 <div class="part2">
-                    <input type=“text”  name="Marca" disabled>
-                    <input type=“text” name="Modelo" disabled>
-                    <input type=“text” name="Serie" disabled>
-                    <input type=“text” name="Descripcion" disabled>
-                    <input type=“text” name="Valor" disabled>
-                    <input type=“text” name="Cantidad" disabled>
-                    <input type=“text” name="Estatus" disabled>
+                    <fieldset >
+                        <legend>Marca</legend>
+                        <input type=“text”  name="Marca" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Modelo</legend>
+                        <input type=“text” name="Modelo" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Serie</legend>
+                        <input type=“text” name="Serie" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Descripcion</legend>
+                        <input type=“text” name="Descripcion" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Valor</legend>
+                        <input type=“text” name="Valor" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Cantidad</legend>
+                        <input type=“text” name="Cantidad" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Estatus</legend>
+                        <input type=“text” name="Estatus" class="none" disabled>
+                    </fieldset>
                 </div>
 
                 <div class="part3">
                     <input class="imgs" type="file" name="imagen" />
-                    <input type=“text” name="Adquisicion" disabled>
-                    <input type=“text” name="Area" disabled>
-                    <input type=“text” name="Resguardante" disabled>
-                    <input type=“text” name="Fecha" disabled>
+
+                    <fieldset>
+                        <legend>Adquisicion</legend>
+                        <input type=“text” name="Adquisicion" class="none" disabled>
+                    </fieldset>
+                    
+                    <fieldset >
+                        <legend>Area</legend>
+                        <input type=“text” name="Area" class="none" disabled>
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Resguardante</legend>
+                        <input type=“text” name="Resguardante" class="none" >
+                    </fieldset>
+
+                    <fieldset >
+                        <legend>Fecha</legend>
+                        <input type=“text” name="Fecha" class="none" disabled>
+                    </fieldset>
                 </div>
 
                 <div class="part4">
-                    <textarea rows="6" cols="40" disabled></textarea>
+                    <fieldset class="f1">
+                        <legend>Documentacion soporte</legend>
+                        <textarea rows="6" cols="40" class="none" disabled></textarea>
+                    </fieldset>
                 </div>
 
                 <div class="part5">
