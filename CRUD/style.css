@@ -274,3 +274,51 @@ body{
     box-sizing: border-box;
     background-color: white;
 }
+
+/*Forms*/
+.forms{
+    display:grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: auto;
+    padding: 10%;
+    gap: 5%;
+}
+
+.part2{
+    display:grid;
+    grid-column: 1/2;
+    grid-template-rows: auto;
+    gap: 5%;
+}
+.part3{
+    display:grid;
+    grid-column: 2/2;
+    grid-template-rows: auto;
+    gap: 5%;
+}
+.part4{
+    padding-top: 2%;
+    grid-column: 1/3;
+    display:grid;
+    grid-template-rows: auto;
+    gap: 5%;
+}
+
+input, textarea{
+    border-radius: 4%;
+}
+
+.grid div{
+    
+}
+
+/*agregar imagen */
+.imgs{
+    padding: 11%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border: solid 1px rgb(0, 0, 0);
+  }
+  .imgs:hover{
+    background-color: #3B86CC;
+  }
