@@ -284,49 +284,45 @@ body{
     gap: 5%;
 }
 
-.part0, .part2{
+.part2{
     display:grid;
-    font-size: 24px;
-    font-weight: bolder;
-}
-.part1{
-    grid-column: 1/3;
-    grid-template-columns: 8% 30% 10%;
-    display:grid;
+    grid-column: 1/2;
+    grid-template-rows: auto;
     gap: 5%;
 }
-
+.part3{
+    display:grid;
+    grid-column: 2/2;
+    grid-template-rows: auto;
+    gap: 5%;
+}
+.part4{
+    padding-top: 6.35%;
+    grid-column: 1/3;
+    display:grid;
+    grid-template-rows: auto;
+    gap: 5%;
+}
 .part5{
     grid-column: 1/3;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 30% 30% 30%;
     display:grid;
     gap: 5%;
 }
-
-.part2{
-    padding-top: 10%;
-}
-
 input {
     height: 30px;
-    border-radius: 4%;
     
 }
-.idsep{
-    padding-top: 15%;
-}
-.sep{
-    margin-left: -10%;
-    margin-right: 5%;
-}
+input, textarea{
+    border-radius: 4%;
 
-/*
+}
 .none{
     border: none;
     width: 100%;
 }
 
-agregar imagen 
+/*agregar imagen */
 .imgs{
     padding: 18.715%;
     padding-left: 0%;
@@ -338,42 +334,54 @@ agregar imagen
   .imgs:hover{
     background-color: #3B86CC;
   }
-*/
-  .clear{
+
+  .reload{
     border: none;
     border-radius: 7.5%;
     color: white;
     margin-left: 1.5%;
     padding: 2.3% 4.5%;
-    margin-left:-50%;
-    margin-right: 50%;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    background-color: #EC0000;
+    background-color: #149000;
   }
 
- .red{
+  .green, .yellow , .red{
     border: none;
     border-radius: 7.5%;
     padding: 7%;
     cursor: pointer;
-    background-color: #6B0000;
-}
-.red:hover{
-    background-color: #BA0000;
+  }
+
+  .green{
+    background-color: #149000;
+  }
+  .green:hover{
+    background-color: #0B5000;
     transition: all .2s ease-out;
   }
-  /*
+  .yellow{
+    background-color: #D8B500;
+}
+.yellow:hover{
+    background-color: #F58737;
+    transition: all .2s ease-out;
+  }
+.red{
+    background-color: #EC0000;
+}
+.red:hover{
+    background-color: #6B0000;
+    transition: all .2s ease-out;
+  }
   fieldset{
       border: 2px solid black;
       border-radius: 4%;
   }
-  
   .f1{
       margin-top: 2%;
   }
   legend{
       margin-left: 5%;
   }
-  */
