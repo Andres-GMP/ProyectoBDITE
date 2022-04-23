@@ -319,10 +319,14 @@ tr:nth-child(even) {
     
   }
 
-  .div-section-right-supersubinfo{
-
-    
+  .form-principal{
+      margin: 25px;
   }
 
-  
-
+  fieldset{
+      border: 1px solid black;
+  }
+  legend{
+      
+    margin-left: 10px;
+  }
