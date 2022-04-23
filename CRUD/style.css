@@ -293,6 +293,36 @@ body{
 .div-section-right-subinfo{
     background-color: #FCFF58;
     padding: 20px;
-    
     border-radius: 10px 10px 0px 0px;
+    text-align: center;
 }
+
+.table-prestamos{
+  
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  width: 100%;
+  text-align: left;
+  
+}
+
+td,th {
+    margin: 5px;
+    border: 1px solid #B2EDFF;
+    text-align: left;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+tr:nth-child(even) {
+    background-color: #5CD8FF;
+    
+  }
+
+  .div-section-right-supersubinfo{
+
+    
+  }
+
+  
+
