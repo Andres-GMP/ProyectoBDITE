@@ -359,11 +359,6 @@ body{
 
 }
 
-.agregar-documentacion{
-    height: 200px;
-}
-
-
 input[type="text" i] {
     width: 307px;
     height: 50px;
@@ -371,7 +366,7 @@ input[type="text" i] {
     border: 1px solid black;
 }
 
-input[type="textarea" i] {
+.agregar-documentacion {
     width: 307px;
     height: 300px;
     border-radius: 5px;
@@ -391,7 +386,13 @@ button.registrar-articulos-btnagregar{
     background-color: #07457F;
     color: white;
     width: 100%;
-    margin-top: 15%
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+button.registrar-articulos-btnagregar:hover{
+    background-color: #3e86c9;
+    transition: all .1s ease-out;
 }
 
 
