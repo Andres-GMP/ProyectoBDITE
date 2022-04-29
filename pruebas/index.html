@@ -12,10 +12,47 @@
         <div class="left"></div>
         <div class="content">
             <div class="frame">
-                <div class="inputs"></div>
+                <div class="inputs">
+                    <div name="" id="" class="all">
+                        <div class="selectbox">
+                            <select name="" id="">
+                                <option value="">Selecciona un opcion</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div class="checkboxes">
+                            <label for=""><input type="checkbox" name="" id="">Ejemplo 1</label>
+                            <label for=""><input type="checkbox" name="" id="">Ejemplo 2</label>
+                            <label for=""><input type="checkbox" name="" id="">Ejemplo 3</label>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        let expanded =false;
+        const checkContain = document.querySelector(".checkboxes");
+        document.addEventListener("click",(e)=>{
+            console.log(e.target)
+            if(e.target.matches(".over-select")){
+                console.log("hola")
+                showCheckboxes();
+                
+            }
+        })
+        function showCheckboxes(){
+            if(!expanded){
+                checkContain.style.display = "block";
+                expanded=true;
+            }
+            else{
+                checkContain.style.display = "none";
+                expanded=false;
+            }
+        }
+    </script>
 </body>
 <style>
     *{
@@ -40,9 +77,7 @@
     }
     .content{
         display: grid;
-        background-color: black;
         grid-area:2/2/2/6;
-
     }
     .frame{
         grid-area: 1/1/1/1;
@@ -54,7 +89,38 @@
     .inputs{
         width: 80%;
         height: 200px;
-        background-color: black;
+        background-color: white;
+        border:1px solid black;
+    }
+    .all{
+        display: block;
+        width: 40%;
+    }
+    .selectbox{
+        position: relative;
+        width: 100%;
+    }
+    select{
+        width: 100%;
+    }
+    .over-select{
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+    }
+    .checkboxes{
+        display: none;
+        border:1px solid black;
+        width: 100%;
+    }
+    .checkboxes label{
+        display: block;
+    }
+    .checkboxes label:hover{
+        background-color: blue;
     }
 </style>
+
 </html>

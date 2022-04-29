@@ -99,10 +99,253 @@
         </aside>
         <div class="frame-container">
             <!-- Aqui va el frame que le toca a cada uno -->
+            <div class="consultas-container">
+                <!-- btnFiltrarMostrar -->
+                <a href="" id="pin-filtrar-mostrar" class="btnPin btnPinFiltrarMostrar" ><img src="images/icon/icon-pin.svg" alt=""></a>
+                <!-- btnInformacionMostrar -->
+                <a href="" id="pin-informacion-mostrar" class="btnPin btnPinInformacionMostrar" ><img src="images/icon/icon-pin.svg" alt=""></a>
+
+                <div class="filtrar-container">
+                    <div class="filtrar-container-header">
+                        <h3>Filtrar</h3>
+                        <a href="" id="pin-filtrar" class="btnPin btnPinInfo" ><img src="images/icon/icon-pin.svg" alt=""></a>
+                    </div>
+                    <div class="filtrar-container-inputs">
+                        
+                        <div class="filtrar-container-inputs-area">
+                            <label for="">Área</label>
+                            <select name="" id="">
+                            </select>
+                        </div>
+                        
+                        <div class="filtrar-container-inputs-resguardante">
+                            <label for="">Resguardante</label>
+                            <select name="" id=""></select>
+                        </div>
+
+                        <div class="filtrar-container-inputs-adq">
+                            <label for="">Adquisición</label>
+                            <select name="" id=""></select>
+                        </div>
+                        
+                        <div class="filtrar-container-inputs-estatus">
+                            <label for="">Estatus</label>
+                            <select name="" id=""></select>
+                        </div>
+
+                        <div class="filtrar-container-inputs-campos select-checkboxes-container">
+                            <label for="">Campos</label>
+                            <div class="container-select">
+                                <select name="" id=""></select>
+                                <div id = "click-selectCampos" class="filtrar-over-Select"></div>
+                            </div>
+                            <div id = "campos-container"class="checkbox-container">
+
+                                <label for=""> <input type="checkbox"  checked> Todos </label>
+                                <label for=""> <input type="checkbox"  checked> ID </label>
+                                <label for="">  <input type="checkbox" checked> Descripcion </label>
+                                <label for="">  <input type="checkbox" checked> Modeo </label>
+                                <label for="">  <input type="checkbox" checked> Cantidad </label>
+                                <label for="">  <input type="checkbox" checked> Serie</label>
+                                <label for="">  <input type="checkbox" checked> Valor</label>
+                                <label for="">  <input type="checkbox" checked> Marca</label>
+                                <label for="">  <input type="checkbox" checked> Adquisicion</label>
+                                <label for="">  <input type="checkbox" checked> Fecha</label>
+                                <label for="">  <input type="checkbox" checked> Area</label>
+                                <label for="">  <input type="checkbox" checked> Estatus</label>
+                            </div>
+                        </div>
+
+                        <div class="filtrar-container-inputs-fecha">
+                            <label for="">Fecha</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="filtrar-container-inputs-descripcion">
+                            <label for="">Descripcion</label>
+                            <input type="text">
+                        </div>
+
+                        
+                        <div class="filtrar-container-inputs-costo">
+                            <label for="">Costo</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="filtrar-container-inputs-marca">
+                            <label for="">Marca</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="filtrar-container-inputs-serie">
+                            <label for="">Serie</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="filtrar-container-inputs-btnConsultar">
+                            <a href="" class="">
+                                <div class="filtrar-container-inputs-btnConsultar-icon">
+                                    <span class="iconify" data-icon="mdi:archive-search"></span>
+                                </div>
+                                <span class="filtrar-container-inputs-btnConsultar-text">
+                                    Consultar
+                                </span>
+                            </a>
+
+                        </div>
+
+                        <div class="filtrar-container-inputs-btnLimpiar">
+                            <a href="" class="">
+                                <div class="filtrar-container-inputs-btnLimpiar-icon">
+                                    <span class="iconify" data-icon="mdi:reload"></span>
+                                </div>
+                                <span class="filtrar-container-inputs-btnLimpiar-text">
+                                    Limpiar
+                                </span>
+                            </a>
+
+                        </div>
+
+                        
+                
+                        
+                    </div>
+                </div> 
+                <div class="informacion-container">
+                    <div class="informacion-container-header">
+                        <h3>Información</h3>
+                        <a href="" id="pin-informacion" class="btnPin btnPinFiltrar" ><img src="images/icon/icon-pin.svg" alt=""></a>
+                    </div>
+                    <div class="informacion-container-content">
+                        <div class=" busqueda-consultar-informacion">
+                            <label for="" class="busqueda-consultar-informacion-label">ID-SEP</label>
+                            <input type="text" name="" id="">
+                            <a>
+                                <span class="iconify" data-icon="mdi:archive-search"></span>
+                            </a>                       
+                        </div>
+                        <div class="container-input-information imagen-consultar-informacion">
+                            
+                        </div>
+                        <div class="container-input-information descripcion-consultar-informacion">
+                            <input type="text" nameCampo = "descripcion" readonly>
+                            <label for="">Descripción</label>
+                        </div>
+
+                        <div class="container-input-information marca-consultar-informacion">
+                            <input type="text" nameCampo = "marca" readonly>
+                            <label for="">Marca</label>
+                        </div>
+
+                        <div class="container-input-information modelo-consultar-informacion">
+                            <input type="text" nameCampo = "modelo" readonly>
+                            <label for="">Modelo</label>
+                        </div>
+
+                        <div class="container-input-information serie-consultar-informacion">
+                            <input type="text" nameCampo = "serie" readonly>
+                            <label for="">Serie</label>
+                        </div>
+
+                        <div class="container-input-information adq-consultar-informacion">
+                            <input type="text" nameCampo = "adquisicion" readonly>
+                            <label for="">Adquisicion</label>
+                        </div>
+
+                        <div class="container-input-information fecha-consultar-informacion">
+                            <input type="text" nameCampo = "fechaAdquisicion" readonly>
+                            <label for="">fecha</label>
+                        </div>
+
+                        <div class="container-input-information estatus-consultar-informacion">
+                            <input type="text" nameCampo = "estatus" readonly>
+                            <label for="">Estatus</label>
+                        </div>
+
+                        <div class="container-input-information cantidad-consultar-informacion">
+                            <input type="text" nameCampo = "cantidad" readonly>
+                            <label for="">Cantidad</label>
+                        </div>
+
+                        <div class="container-input-information valor-consultar-informacion">
+                            <input type="text" nameCampo = "valor" readonly>
+                            <label for="">Valor</label>
+                        </div>
+
+                        <div class="container-input-information area-consultar-informacion">
+                            <input type="text" nameCampo = "area" readonly>
+                            <label for="">Area</label>
+                        </div>
+
+                        <div class="container-input-information resguardante-consultar-informacion">
+                            <input type="text" nameCampo = "resguardante">
+                            <label for="">Resguardante</label>
+                        </div>
+
+                        <div class="container-input-information soporte-consultar-informacion">
+                            <textarea name="" id="" cols="auto" rows="auto"></textarea>
+                            <label for="">Documentacion soporte</label>
+                        </div>
+                        <div class="container-input-information botones-consultar-informacion">
+                            <div class="informacion-container-inputs-btnPrestamo">
+                                <a href="" class="">
+                                    <div class="informacion-container-inputs-btnPrestamo-icon">
+                                        <span class="iconify" data-icon="mdi:attachment-plus"></span>
+                                    </div>
+                                    <span class="informacion-container-inputs-btnPrestamo-text">
+                                        Prestamo
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="informacion-container-inputs-btnImprimir">
+                                <a href="" class="">
+                                    <div class="informacion-container-inputs-btnImprimir-icon">
+                                        <span class="iconify" icono-infromacion = "true" data-icon="mdi:printer"></span>
+                                    </div>
+                                    <span class="informacion-container-inputs-btnImprimir-text">
+                                        Imprimir
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabla-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#INV</th>
+                                <th>CANTIDAD</th>
+                                <th>DESCRIPCIÓN</th>
+                                <th>MODELO</th>
+                                <th>SERIE</th>
+                                <th>VALOR</th>
+                                <th>MARCA</th>
+                                <th>ADQUISICION</th>
+                                <th>FECH. ADQ.</th>
+                                <th>AREA</th>
+                                <th>RESGUARDANTE</th>
+                                <th>ESTATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody id = "tabla-contendio">                            
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    Cantidad:
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
         </div>
         
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type = "module"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 </html>

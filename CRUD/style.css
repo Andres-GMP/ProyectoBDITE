@@ -112,7 +112,13 @@ ul {
     padding: 0;
 }
 :root{
-    --yellow:rgb(223, 223, 0);
+    --yellow: #D8B500;
+    --orange:#F58737;
+    --green:#149000;
+    --gray:#E5E5E5;
+    --blue-1:#0C3E6C;   /* var(--blue-1) */
+    --blue-2:#0F5FA9;   /* var(--blue-1) */
+    --blue-3:#6AB3F5;   /* var(--blue-1) */
 }
 html{
     font-family: 'Lato', sans-serif;
@@ -124,23 +130,68 @@ body{
 }
 .main{
     width: 100%;
+    max-width: 100%;
     height: 100vh;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 10% 90%;
     grid-template-areas: 
     "aside      nav-frame"
     "aside      frame-container";
+    overflow: hidden;
+}
+/* Cotnainer */
+.informacion-container,
+.filtrar-container,
+.tabla-container{
+   
+    box-shadow: 3px 3px 20px rgba(0,0,0, 0.3);
 }
 
-
-
-
+/* pin */
+.btnPin img{
+    width: 20px;
+    transition: all .5s ease;
+}
+.btnPin{
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    height: 20px;
+    transition: all 500ms ease-in-out;
+}
+.btnPinInfo{
+    right: 5px;
+    padding: 2px;
+}
+.btnPinFiltrar{
+    right: 5px;
+    padding: 2px;
+}
+.btnPin:hover img{
+    transform: translateY(-2px);
+}
+.btnPinFiltrarMostrar{
+    top: calc(10% - 2px);
+    left: 76%;
+    
+    box-shadow: 3px 3px 20px rgba(0,0,0, 0.2);
+}
+.btnPinInformacionMostrar{
+    top: 13%;
+    right: -2px;
+    box-shadow: 3px 3px 20px rgba(0,0,0, 0.2);
+}
+body{
+    overflow: hidden;
+    max-width: 100%;
+}
 /* Aside left nav */
 .aside-left{
     grid-area: aside;
     min-width: 140px;
-    background-color: #0C3E6C;
+    background-color: var(--blue-1);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -212,10 +263,10 @@ body{
     color: rgb(174, 174, 174);
 }
 .aside-left a[selected="true"]{
-    background-color: #6AB3F5;
+    background-color: var(--blue-3);
     border-radius: 10px;
     color: #000;
-    border: 5px solid #6AB3F5;
+    border: 5px solid var(--blue-3);
     box-sizing:border-box;
     
 }
@@ -237,7 +288,6 @@ body{
 }
 
 .aside-left-nav-list-btnHeader{
-    
     display: flex;
     justify-content: space-between;
 }
@@ -256,21 +306,597 @@ body{
 .nav-frame ul li a{
     color: white;
     text-decoration: none;
-    border-bottom: 4px solid #6AB3F5;
+    border-bottom: 4px solid var(--blue-3);
     border-radius: 2px;
     margin-left: 20px;
 }
 .nav-frame{
-    background-color: #0C3E6C;
+    background-color: var(--blue-1);
     grid-area: nav-frame;
     width: 100%;
     height: 100%;
+    z-index: 99;
 }
 /*  Frame Container */
 .frame-container{
     grid-area:frame-container;
     overflow: hidden;
-    max-height: inherit;
     box-sizing: border-box;
+    background-color:white;
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+/* Consultas */
+.consultas-container{
+    display: grid;
+    grid-template-columns: 73% 23%;
+    grid-template-rows: 32% 65%;
+    grid-template-areas: 
+    "filtrar-consultar      informacion-consultar"
+    "tabla-consultar        informacion-consultar";
+    column-gap: 1%;
+    row-gap: 2%;
+    margin: 25px 10px;
+    justify-content: center;
+}
+
+
+
+.tabla-container{
+    position: relative;
+    grid-area: tabla-consultar;
+}
+
+.filtrar-container-header{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.informacion-container-header{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.filtrar-container{
+    grid-area:filtrar-consultar;
+}
+
+.filtrar-container,.informacion-container{
+    border-radius: 10px;
     background-color: white;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    overflow: hidden;
+
+}
+.filtrar-container-inputs{
+    width: 100%;
+    height: 79%;
+    grid-area:filtrar-consultar;
+    
+    display: grid;
+    grid-template-columns: repeat(6,13%);
+    grid-template-rows: repeat(2,30%);
+    grid-template-areas:
+    "area-consultar             adq-consultar           campos-consultar    descripcion-consultar       marca-consultar     btnConsultar-consultar"
+    "resguardante-consultar     estatus-consultar       fecha-consultar     costo-consultar             serie-consultar     btnLimpiar-consultar";
+    row-gap: 10%;
+    column-gap: 2%;
+    align-content: center;
+    justify-content: center;
+
+}
+.filtrar-container-inputs label{
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+}
+.filtrar-container-inputs input,.filtrar-container-inputs select{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.filtrar-container-inputs-area{
+    grid-area:area-consultar;
+}
+.filtrar-container-inputs-resguardante{
+    grid-area:resguardante-consultar;
+}
+.filtrar-container-inputs-adq{
+    grid-area:adq-consultar;
+}
+.filtrar-container-inputs-estatus{
+    grid-area:estatus-consultar;
+}
+.filtrar-container-inputs-campos{
+    grid-area:campos-consultar;
+}
+.filtrar-container-inputs-fecha{
+    grid-area:fecha-consultar;
+}
+.filtrar-container-inputs-descripcion{
+    grid-area:descripcion-consultar;
+}
+.filtrar-container-inputs-costo{
+    grid-area:costo-consultar;
+}
+.filtrar-container-inputs-marca{
+    grid-area:marca-consultar;
+}
+.filtrar-container-inputs-serie{
+    grid-area:serie-consultar;
+}
+
+.filtrar-container-inputs-btnConsultar{
+    width: 100%;
+    height: 100%;
+    grid-area:btnConsultar-consultar;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.filtrar-container-inputs-btnLimpiar{
+    width: 100%;
+    height: 100%;
+    grid-area:btnLimpiar-consultar;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.filtrar-container-inputs-btnConsultar-icon{
+    background-color: var(--blue-3);
+}
+.informacion-container-inputs-btnPrestamo-icon{
+    background-color: var(--orange);
+}
+.informacion-container-inputs-btnImprimir-icon{
+    background-color: var(--green);
+}
+
+.filtrar-container-inputs-btnConsultar-icon
+,.informacion-container-inputs-btnPrestamo-icon
+,.informacion-container-inputs-btnImprimir-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    box-sizing:border-box ;
+    border-radius: 2px 0px 0px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filtrar-container-inputs-btnConsultar-text
+,.informacion-container-inputs-btnPrestamo-text
+,.informacion-container-inputs-btnImprimir-text{
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+.consultas-container .iconify{
+    color: black;
+}
+.informacion-container-inputs-btnImprimir,
+.informacion-container-inputs-btnPrestamo{
+    width: 100%;
+    height: 100%;
+}
+.informacion-container-inputs-btnImprimir a,
+.informacion-container-inputs-btnPrestamo a{
+    position: relative;
+    text-decoration: none;
+    width: 95%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    box-sizing:border-box ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0, 0.4);
+
+}
+.filtrar-container-inputs-btnConsultar a{
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    box-sizing:border-box ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0, 0.4);
+  
+
+}
+
+.filtrar-container-inputs-btnLimpiar-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: var(--gray);
+    box-sizing:border-box ;
+    border-radius: 2px 0px 0px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtrar-container-inputs-btnLimpiar a{
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing:border-box;
+    box-shadow: 2px 2px 3px rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    bottom: 0px;
+ 
+
+}
+
+.filtrar-container-inputs-btnLimpiar-text{
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+/* Filtrar checkbox */
+.select-checkboxes-container{
+    width: 100%;
+    height: 100%;
+}
+.select-checkboxes-container label {
+    height: 30%;
+    width: 100%;
+}
+.select-container{
+    width: 100%;
+}
+.container-select{
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+.container-select select{
+    width: 100%;
+    height: 100%;
+}
+.filtrar-over-Select{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.checkbox-container{
+    display: none;
+    border:1px solid black;
+    width: 100%;
+    max-height: 150%;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    
+}
+.checkbox-container label{
+    display: block;
+}
+.checkbox-container label input{
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+}
+
+
+/* informacion */
+.informacion-container{
+    grid-area: informacion-consultar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.informacion-container-content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+    "busqueda-consultar-informacion         busqueda-consultar-informacion"
+    "marca-consultar-informacion            imagen-consultar-informacion"
+    "modelo-consultar-informacion           imagen-consultar-informacion"
+    "serie-consultar-informacion            imagen-consultar-informacion"
+    "descripcion-consultar-informacion      adq-consultar-informacion"
+    "valor-consultar-informacion            area-consultar-informacion"
+    "cantidad-consultar-informacion         resguardante-consultar-informacion"
+    "estatus-consultar-informacion          fecha-consultar-informacion"
+    "soporte-consultar-informacion          soporte-consultar-informacion"
+    "soporte-consultar-informacion          soporte-consultar-informacion"
+    "botones-consultar-informacion          botones-consultar-informacion";
+    height: 90%;
+    column-gap: 5px;
+    row-gap: 10px;
+    margin:auto;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.container-input-information{
+    position: relative;
+    box-sizing: content-box;
+}
+.container-input-information label{
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    background-color: white;
+    
+}
+.container-input-information input{
+    border: 1px solid rgba(0,0,0, 0.6);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    box-sizing:  border-box;
+    font-size: 12px;
+
+}
+
+.busqueda-consultar-informacion{
+    width: 100%;
+    grid-area: busqueda-consultar-informacion;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(1fr,2);
+    grid-template-areas:
+    "label      label"
+    "input      button";
+    column-gap: 5px ;
+    row-gap: 2px ;
+    padding-right: 10px;
+}
+.busqueda-consultar-informacion-label{
+    grid-area: label;
+    font-size: 12px;
+}
+.busqueda-consultar-informacion input{
+    height: 100%;
+    grid-area: input;
+    border: 1px solid rgba(0,0,0,.6);
+    border-radius: 5px 0px 0px 5px;
+    box-sizing: border-box;
+}
+.busqueda-consultar-informacion a{
+    width: 95%;
+    height: 100%;
+    grid-area: button;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--blue-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.descripcion-consultar-informacion{
+    grid-area: descripcion-consultar-informacion;
+}
+
+.marca-consultar-informacion{
+    grid-area: marca-consultar-informacion;
+}
+
+.modelo-consultar-informacion{
+    grid-area: modelo-consultar-informacion;
+}
+
+.serie-consultar-informacion{
+    grid-area: serie-consultar-informacion;
+}
+
+.adq-consultar-informacion{
+    grid-area: adq-consultar-informacion;
+}
+
+.fecha-consultar-informacion{
+    grid-area: fecha-consultar-informacion;
+}
+
+.estatus-consultar-informacion{
+    grid-area: estatus-consultar-informacion;
+}
+
+.cantidad-consultar-informacion{
+    grid-area: cantidad-consultar-informacion;
+}
+
+.valor-consultar-informacion{
+    grid-area: valor-consultar-informacion;
+}
+
+.area-consultar-informacion{
+    grid-area: area-consultar-informacion;
+}
+
+.resguardante-consultar-informacion{
+    grid-area: resguardante-consultar-informacion;
+}
+
+.soporte-consultar-informacion{
+    grid-area: soporte-consultar-informacion;
+}
+.botones-consultar-informacion{
+    grid-area:botones-consultar-informacion;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagen-consultar-informacion{
+    grid-area: imagen-consultar-informacion;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,.6);
+    border-radius: 5px;
+}
+/* Tabla */
+.tabla-container{
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease;
+}
+.tabla-container table{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    table-layout: fixed;
+    background-color: var(--yellow);
+    
+}
+/* head */
+.tabla-container table thead{
+    background-color: var(--yellow);
+    width: calc(100% - 1rem);
+    height: 10%;
+    max-height: 10%;
+    border-bottom: 2px solid rgba(0,0,0,.4);
+    box-shadow: 2px 5px 3px rgba(0,0,0,.3);
+    display: table;
+    table-layout: fixed;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+
+.tabla-container table thead th{
+    overflow: hidden;
+    font-size: 8px;
+    white-space:pre-wrap;
+    text-align: center;
+    vertical-align: middle;
+    border-left: 2px solid rgba(0,0,0,.4);
+    
+}
+.tabla-container table thead :first-child{
+    border-left: none;
+}
+/* body */
+.tabla-container table tbody{
+    width: 100%;
+    height: 80%;
+    display: block;
+    overflow-y: auto;
+
+}
+/* foot */
+.tabla-container tfoot{
+    width: 100%;
+    height: 10%;
+    vertical-align: middle;
+    max-height: 10%;
+    border-top: 2px solid black;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+}
+.tabla-container tfoot span{
+    margin-left: 10px;
+}
+.tabla-container-bottom-opciones{
+    margin-right: 10px;
+}
+
+
+
+
+.tabla-container tbody tr td{
+    overflow:hidden;
+    border-left: 1px solid rgba(0,0,0,.4);
+    cursor: pointer;
+    font-size: 12px;
+}
+table tbody tr:hover{
+    background-color: var(--blue-3);
+}
+.tabla-container tbody tr{
+    max-width: 100%;
+    overflow:hidden;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    cursor: pointer;
+} 
+
+
+table tbody {
+    display: block;
+    width: 100%;
+    max-height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+  
+ table tbody tr ,table tfoot{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    cursor: pointer;
+}
+.informacion-container textarea{
+    resize: none;
+    padding: 5px;
+    width: 95%;
+    height: 70%;
+
+}
+table tbody td :hover{
+    background-color: red;
 }
