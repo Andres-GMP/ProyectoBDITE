@@ -1,0 +1,245 @@
+/* reset */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+/* end reset */
+ul {
+    list-style-type: none;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --yellow:rgb(216, 181, 0);
+    --blueIte:rgb(12, 62, 108);
+    --borderInputs: rgba(154, 154, 154, 1);
+    --colorButton: #002445;
+    --colorITE: #EAC400;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../svg/RegisterBackground.svg') ;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    /* min-width: 1260px; */
+    min-height: 39.063rem;
+    min-width:85.375rem ;
+}
+.register{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    height: 39.063rem;
+    width:85.375rem ;
+}
+.logo{
+    width: 2.688rem;
+    height: 2.688rem;
+    margin-right: 0.938rem;
+}
+.register-head{
+  position: absolute;
+  color: var(--colorITE);
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 0.938rem; */
+    margin-top: 0.1rem ;
+    margin-left: 0.1rem ;
+}
+.register-head--msg{
+  color: white;
+  font-size: 2.25rem;
+  width: 30rem;
+  text-align: center;
+  justify-self: center;
+  margin: 1rem auto;
+}
+.register-title1{
+  color: var(--blueIte);
+    display: flex;
+    font-size: 3rem;
+    font-weight: bolder;
+    justify-content: center;
+    margin: 0.8rem auto;
+}
+.register-form label{
+    margin: 1rem 0 0.125rem 0;
+}
+.register-form{
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 2rem 7rem 0rem 7rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-direction: column;
+    width: 39rem;
+    height: 30em;
+    background: #FFFFFF;
+    box-shadow: 3px -2px 4px rgba(15, 95, 169, 0.1);
+    border-radius: 30px;
+    margin: auto;
+}
+.register-form-subtitle{
+    justify-self: center;
+}
+.register-form--input{
+    height: 1.939rem;
+    width: auto;
+    border: 1px solid var(--borderInputs);
+    border-radius: 0.45rem;
+}
+.register-form-password input{
+    height: 2em;
+    width: auto;
+}
+.register-form-password{
+    display: grid;
+    gap:0rem 1rem;
+    /* grid-template-areas: 
+    "contratxt1" "contratxt2" 
+    "contra1" "contra2" ; */
+}
+.register-form-password--contratxt1{
+    /* grid-area: contratxt1; */
+    grid-row-start:1 ;
+    grid-column-end: 2;
+  }
+  .register-form-password--contratxt2{
+    grid-row-start:1 ;
+    grid-column-start: 2;
+    /* grid-area: contratxt2; */
+  }
+  .register-form--input_contra1{
+    grid-row-start:2 ;
+    grid-column-end: 2;
+    /* grid-area: contra1; */
+  }
+  .register-form--input_contra2{
+    /* grid-area: contra2; */
+    grid-row-start:2 ;
+    grid-column-start: 2;
+}
+.register-form--submit{
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    width: auto;
+    font-weight: 800;
+    letter-spacing: 1%;
+    background-color: var(--colorButton);
+    border: 1px solid var(--colorButton);
+    border-radius: 0.50rem;
+    
+}
+.register-form--a{
+    margin: 0rem auto;
+}

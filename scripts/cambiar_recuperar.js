@@ -9,7 +9,7 @@ export function alternarRecuperar(frame,salir,olvido){
         }
         d.addEventListener("click",(e)=>{
             e.preventDefault()
-            if(!e.target.name === "btnLogin")e.preventDefault();
+            if(!e.target.name === "btnregister")e.preventDefault();
             if(e.target.matches(salir)||e.target.matches(olvido)) cambiarRecuperar();
         
         })
