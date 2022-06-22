@@ -126,20 +126,28 @@ html{
 body{
     background-image: url('../svg/Wavelogin.svg') ;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center bottom;
-    /* min-width: 1260px; */
-    min-height: 39.063rem;
-    min-width:85.375rem ;
+    background-attachment: fixed;
+    background-size: 100%;
+
 }
 .login{
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
     height: 39.063rem;
-    width:85.375rem ;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    
 }
 
 .logo{
+  margin-top: 1% ;
+  margin-left:1% ;
+  
     width: 2.688rem;
     height: 2.688rem;
 }
@@ -176,6 +184,7 @@ body{
     box-shadow: 3px -2px 4px rgba(15, 95, 169, 0.1);
     border-radius: 30px;
     margin: 1.13rem auto;
+    
 }
 .login-form-subtitle{
     justify-self: center;
