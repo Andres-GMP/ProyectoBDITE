@@ -14,28 +14,50 @@
 <body>
 
     <span class="header">
+        <div class="register-head">
+            
+        <img src="../svg/LogoITE.svg" alt="" class="logo">
+        <h2 class="tit">Nombre Inventario</h2>
         <h1 class="header-h1">Bienvenido</h1>
+        </div>
+        
         <p class="header-p">Identifiquese</p>
     </span>
     <div class="options">
 
         <!-- onmouseleave= easeAdmin() -->
-        <form class="options-admin" action="" id="Option-Admin" 
+        <form class="options-admin" action="" id="Option-Admin" >
         <!-- onmouseover= overAdmin() -->
-        >
+        <div class="options-adminSS" id="eee" onclick="showHtmlDiv()">
+
             <h2 class="options-admin--title"
             >Administrador</h2>
             <p class="options-admin--p"
             >Si usted tiene el control de diferentes sectores y le gustaría registrar 
                 sus articulos en un inventario completamente privado para usted.</p>
-            <img class="options-admin--img" src="../svg/Admin.svg" alt=""
+            <img class="options-admin--img" src="../svg/Admin.svg" alt="">
+        </div>
+        <!--
+        <script>
+            function showHtmlDiv() {
+              var htmlShow = document.getElementById("eee");
+              
+                htmlShow.style.display = "none";
+              
+            }
+        </script>
+        -->
+        <!--
+        <div class="options-adminSSS">
             
-            >
+            >Si usted tiene el control de diferentes sectores y le gustaría registrar 
+                sus articulos en un inventario completamente privado para usted.</p>
+        </div>
+-->
         </form>
-            
-        <form class="options-admin-form" action="" 
-        id="Option-Admin--hover"
-        >
+        
+            <!--
+        <form class="options-admin-form" action="" id="Option-Admin--hover">
             <h2 class="admin-form--title">Administrador</h2>
             <div class="options-admin--input1">
                 <label for="">Nombre</label>
@@ -53,7 +75,8 @@
                 <label for="">Ingrese el nombre de su almacen</label>
                 <input type="text">
             </div>
-        </form>
+        </form> -->
+
         
         <form class="options-loan" action="" id="Option-Loan">
             <h2 class="options-loan--title">Resguardante</h2>

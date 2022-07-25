@@ -128,12 +128,35 @@ body{
     min-height: 39.063rem;
     min-width:85.375rem ;
 }
+.logo{
+  margin-top: 0% ;
+  margin-left:2% ;
+  width: 2.688rem;
+  height: 2.688rem;
+}
+.tit{
+margin-top: 0%;
+font-size: x-large;
+
+}
+.register-head{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.938rem;
+    margin-top: 0.1rem ;
+    margin-left: 0.1rem ;
+}
 
 .header-h1{
     font-size: 3rem;
     width: fit-content;
+    padding-right: 20rem;
     margin: 0rem auto;
     margin-top: 2.563rem;
+    text-transform:uppercase;
 }
 .header-p{
     font-size: 1.25rem;
@@ -142,10 +165,10 @@ body{
     margin: 0rem auto;
 }
 .options{
-    padding: 0rem 1.68rem;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -174,13 +197,16 @@ body{
     border-radius: 1.87rem;
     
 }
-
+.options-admin:hover{
+  
+}
 .options-admin--title{
     font-size: 2.25rem;
     font-weight: bold;
     width: fit-content;
     margin: auto;
 }
+
 .options-admin--p{
     width: 35.5rem;
     font-size: 1.5rem;
@@ -192,7 +218,17 @@ body{
     height: auto;
     margin: auto;
 }
-
+/*
+.options-adminSS:hover{
+  visibility:collapse;
+}
+.options-adminSSS{
+  visibility:collapse;
+}
+.options-adminSSS:hover{
+  visibility:visible;
+}
+*/
 /* Este formulario está oculto */
 .options-admin-form{
   
