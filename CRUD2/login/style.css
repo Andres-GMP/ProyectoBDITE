@@ -210,3 +210,8 @@ body{
 .login-form--a{
     margin: 0rem auto;
 }
+
+.nombreinventario{
+  color: #07457F;
+  font-size: large;
+}

@@ -238,3 +238,43 @@ body{
 .login-form--a{
     margin: 0rem auto;
 }
+
+.register-form-password input{
+  height: 2em;
+  width: auto;
+}
+.register-form-password{
+  display: grid;
+  gap:0rem 1rem;
+  
+  /* grid-template-areas: 
+  "contratxt1" "contratxt2" 
+  "contra1" "contra2" ; */
+}
+.register-form-password--contra1{
+  /* grid-area: contratxt1; */
+  grid-row-start:1 ;
+  grid-column-end: 2;
+  border-radius: 0.45rem;
+}
+.register-form-password--contratxt2{
+  grid-row-start:1 ;
+  grid-column-start: 2;
+  border-radius: 0.45rem;
+  /* grid-area: contratxt2; */
+}
+.register-form--input_contra1{
+  height: 1.939rem;
+    width: auto;
+    border: 1px solid var(--borderInputs);
+    border-radius: 0.45rem;
+    
+}
+
+.register-form--input_contra2{
+  height: 1.939rem;
+    width: auto;
+    border: 1px solid var(--borderInputs);
+    border-radius: 0.45rem;
+    
+}
