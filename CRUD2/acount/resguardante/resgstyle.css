@@ -124,7 +124,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-image: url('/CRUD2/svg/WaveLogin.svg') ;
+    background-image: url('/CRUD2/svg/WaveResguardante.svg') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -163,10 +163,33 @@ body{
 }
 .login-title1{
     display: flex;
+    flex-direction: column;
     font-size: 3rem;
     font-weight: bolder;
     justify-content: center;
+    align-content: center;
+    align-items: center;  
 }
+
+.login-title1 p{
+   display: flex;
+   font-size: 1rem;
+   justify-content: center;
+   align-self: center;
+   width: fit-content;
+   margin: 0rem auto;
+   
+}
+
+.login-title1 h1{
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  width: fit-content;
+  margin: 0rem auto;
+}
+
+
 .login-form label{
     margin: 1.25rem 0 0.125rem 0;
 }
@@ -187,13 +210,18 @@ body{
     
 }
 .login-form-subtitle{
-    justify-self: center;
+  display: flex;
+  align-self: center;
+  color: #002445;
+  font-size: 1.5rem;
 }
 .login-form--input{
     height: 1.939rem;
     width: auto;
     border: 1px solid var(--borderInputs);
     border-radius: 0.45rem;
+    display: flex;
+    flex-direction: row;
 }
 .login-form--submit{
     color: white;
@@ -202,11 +230,52 @@ body{
     width: auto;
     font-weight: 800;
     letter-spacing: 1%;
-    background-color: var(--colorButton);
-    border: 1px solid var(--colorButton);
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
     border-radius: 0.50rem;
+    
     
 }
 .login-form--a{
     margin: 0rem auto;
+}
+
+.register-form-password input{
+  height: 2em;
+  width: auto;
+}
+.register-form-password{
+  display: grid;
+  gap:0rem 1rem;
+  
+  /* grid-template-areas: 
+  "contratxt1" "contratxt2" 
+  "contra1" "contra2" ; */
+}
+.register-form-password--contra1{
+  /* grid-area: contratxt1; */
+  grid-row-start:1 ;
+  grid-column-end: 2;
+  border-radius: 0.45rem;
+}
+.register-form-password--contratxt2{
+  grid-row-start:1 ;
+  grid-column-start: 2;
+  border-radius: 0.45rem;
+  /* grid-area: contratxt2; */
+}
+.register-form--input_contra1{
+  height: 1.939rem;
+    width: auto;
+    border: 1px solid var(--borderInputs);
+    border-radius: 0.45rem;
+    
+}
+
+.register-form--input_contra2{
+  height: 1.939rem;
+    width: auto;
+    border: 1px solid var(--borderInputs);
+    border-radius: 0.45rem;
+    
 }
