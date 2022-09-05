@@ -1,0 +1,218 @@
+/* reset */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+/* end reset */
+ul {
+    list-style-type: none;
+}
+*{
+    /* box-sizing: border-box; */
+    margin:0;
+    padding: 0;
+}
+:root{
+    --yellow:rgb(216, 181, 0);
+    --blueIte:rgb(12, 62, 108);
+    --borderInputs: rgba(154, 154, 154, 1);
+    --colorButton: #002445;
+    --colorITE: #EAC400;
+    --backgroundITE: rgb(242,242,242);
+}
+html{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.Header{
+    width: auto;
+    height: 10%;
+    background-color: var(--blueIte);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Header-logo{
+    justify-content: center;
+    margin: 0.5%;
+}
+
+.Header-logo--img{
+    width: auto;
+    height: auto;
+}
+
+.Header-text{
+    margin: 1% 0%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.logo--addres{
+    color: var(--borderInputs);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.Container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: -var(--backgroundITE);
+    padding: 0% 1%;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .Warehouse::after{
+    display: block;
+    clear: initial;  
+    content: "";
+    background-color: #0F5FA9;
+    width: auto;
+    height: 100px;
+} */
+
+
+.Warehouse{
+    /* position: relative; */
+    /* content: "Hoola"; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1%;
+    margin: auto;
+    width: 20%;
+    height: 30%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* border-radius: 15px; */
+    border-radius: 5%;
+
+}
+
+/* .Warehouse::after{
+    background-color: var(--blueIte);
+} */
+
+.Warehouse-title{
+    font-size: 200%;
+}
+.Warehouse-description{
+    font-weight: bold;
+    text-align: center;
+}
+.Warehouse-config{
+    align-self: flex-end;
+    display: flex;
+}
