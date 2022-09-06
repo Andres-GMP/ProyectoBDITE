@@ -124,3 +124,17 @@ input, select {
 .main-aside{
     background: #cccccc;
 }
+
+@media screen and (max-width: 200px) {
+  p {
+    font-size: 5px;
+  }
+}
+
+@media screen and (min-height: 11.04%){
+  
+  header{
+    height: 11.04%;
+  }
+}
+  
