@@ -114,10 +114,12 @@ input, select {
 }
 
 
+
 .global-header{
     background: var(--blueIte);
     width: 100%;
     height: 11.04%;
+
 }
 .main{
     background-color: #ff9;
