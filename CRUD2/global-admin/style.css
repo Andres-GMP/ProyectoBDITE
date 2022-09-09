@@ -105,25 +105,75 @@ input, select {
 }
 
 :root{
-    
-    --yellow:rgb(216, 181, 0);
-    --blueIte:rgb(12, 62, 108);
+
     --borderInputs: rgba(154, 154, 154, 1);
     --colorButton: #002445;
-    --heightt:height;
+    --color1: rgba(0,36,69);
+    --color2: rgb(12, 62, 108);
+    --color3: rgb(7, 69, 127);
+    --color4: rgb(15, 95, 169);
+    --shwYellow: rgba(173,145,0,1);
+    --yellowITE: rgba(234,196,0,1);
+    --colorLabel: rgba(0,0,0,0.5);
+    --inputs:rgba(154,154,154,1);
+    --tableColor: rgba(205,231,255,1);
 }
 
-
-
-.global-header{
-    background: var(--blueIte);
-    width: 100%;
-    height: 11.04%;
-
+.Header{
+    width: auto;
+    height: 10%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: flex-start;
 }
+
+.Header-logo{
+    justify-content: center;
+    margin: 0.5%;
+}
+
+.Header-logo--img{
+    width: auto;
+    height: auto;
+}
+
+.Header-text{
+    margin: 1% 0%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
 .main{
-    background-color: #ff9;
+    display: grid;
+    height: 90vh;
+    width: auto;
+    
+    /* start in row 1, column 2, end row 2 and column 9  */
+    /* grid-area:1/2/2/10; */
+
+    grid-template-columns: [aside] 3.5% [article] 96.5%;
+
+    /* Este es para cuando se muestra el navbar completo */
+    /* grid-template-columns: [aside] 11.70% [article] 88.3%; */
+  }
+  .main-aside{
+    grid-area: aside;
+    background: var(--color3);
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    /* width: 30%; */
+    /* height: 100%; */
 }
-.main-aside{
-    background: #cccccc;
+
+
+.main-container{
+  grid-area: article;
+    /* background:#000; */
+    height: 100%;
+    width: auto;
 }
