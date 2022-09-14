@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Solicitud prestamo</title>
+</head>
+<body>
+    <nav class="navBar">
+        <ul class="navBar-ul">
+            <li class="navBar-ul--li1">
+                <a href=""><h4 class="navBar-ul--li1__h4">SOLICITUD DE ARTICULO</h4></a>
+            <div class="navaBar-ul--li1__barr1"></div>
+            </li>
+        </ul>
+    </nav>
+<div class = "main">
+    <aside class="aside-left">
+        <section class="aside-left-top">
+            <div class="aside-left-usaurio aside-left-content">
+                <img src="images/user.png" alt="" class="aside-userImage"> 
+                <h2 class="aside-userName">
+                    User - Area
+                </h2>
+            </div>
+            <div class="aside-left-inventario aside-left-content" >
+                <h3>INVENTARIO</h3>
+                <a href="" selected = "true">Registrar Articulo</a>
+            </div>
+            <div class="aside-left-Busqueda aside-left-content">
+                <h3>BUSQUEDA</h3>
+                <a href="">Busqueda Rapida</a>
+                <a href="">Busqueda Avanzada</a>
+            </div>
+        </section>
+        
+        <section class="aside-left-bottom">
+            <div class="aside-left-configuracion aside-left-content">
+                <h3>CONFIGURACIÓN</h3>
+                <a href="">Cuenta</a>
+                <a href="">Datos</a>
+            </div>
+            
+        </section>
+    </aside>
+    <div class="container">
+        <div class="container-loan">
+            <div class = "container-loan--title"><h3 class ="container-loan--title__h3">Solictar articulos</h3></div>
+            <form action="" class ="container-loan--form">
+                <!-- Columna 1 -->
+                <div class="form-col1">
+                    <p class = "form-col1--title">Solicitud</p>
+                    <!-- <h4 class = "form-col1--title">Solicitud</h4> -->
+                    <label for="" class = "form-col1--label1">ID articulo</label>
+                    <input type="text" class = "form-col1--input1">
+
+                    <label for="" class = "form-col1--label2">Área donde se utilizará el articulo</label>
+                    <input list="areaWork" class = "form-col1--input1">
+                    <datalist id = "areaWork">
+                        <option value="something"></option>
+                    </datalist>
+                    
+                    <label for="" class = "form-col1--label3">Fecha inicial del prestamo</label>
+                    <input type="date">
+
+                    <label for="" class = "form-col1--label4">Fecha inicial del prestamo</label>
+                    <input type="date">
+
+                    <label for="" class = "form-col1--label5">Información adicional</label>
+                    <textarea name="form-col1--txtArea" id="" cols="30" rows="10"></textarea>
+                    
+                    <a href="" class="form-col1--buttonSubmit"><span>Solicitar prestamo</span></a>
+                </div>
+                <div class="form-gapY1">
+                </div>
+                <!-- Columna 2 -->
+                <div class="form-col2">
+                    <h4 class="form-col2--title">Información del articulo</h4>
+                    
+                    <label for=""> IMAGEN
+                        <input type="image">
+                    </label>
+                    <fieldset class="form-col2--fielset1">
+                        <legend>Marca</legend>
+                        <input type="text" class="form-col2--input1">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset2">
+                        <legend>Modelo</legend>
+                        <input type="text" class="form-col2--input2">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset3">
+                        <legend>Serie</legend>
+                        <input type="text" class="form-col2--input3">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset4">
+                        <legend>Descripción</legend>
+                        <input type="text" class="form-col2--input4">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset5">
+                        <legend>Adquisición</legend>
+                        <input type="text" class="form-col2--input5">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset6">
+                        <legend>Valor</legend>
+                        <input type="text" class="form-col2--input6">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset7">
+                        <legend>Área</legend>
+                        <input type="text" class="form-col2--input7">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset8">
+                        <legend>Cantidad</legend>
+                        <input type="text" class="form-col2--input8">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset9">
+                        <legend>Resguardante</legend>
+                        <input type="text" class="form-col2--input9">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset10">
+                        <legend>Estatus</legend>
+                        <input type="text" class="form-col2--input10">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset11">
+                        <legend>Fecha</legend>
+                        <input type="text" class="form-col2--input11">
+                    </fieldset>
+
+                    <fieldset class="form-col2--fielset6">
+                        <legend>Documentación soporte</legend>
+                        <textarea name="" id="" cols="30" rows="10" class = "form-col2-txtArea"></textarea>
+                    </fieldset>
+                </div>
+                <div class="form-gapY2"></div>
+                <!-- Columna 3 -->
+                <div class="form-col3">
+                    <fieldset class="form-col3--fielset1">
+                        <legend>Resguardante</legend>
+                        <input type="text" class="form-col3--input1">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset2">
+                        <legend>Prestatario(a)</legend>
+                        <input type="text" class="form-col3--input2">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset3">
+                        <legend>Fecha inicial</legend>
+                        <input type="text" class="form-col3--input3">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset4">
+                        <legend>Fecha final</legend>
+                        <input type="text" class="form-col3--input4">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset5">
+                        <legend>ID Area</legend>
+                        <input type="text" class="form-col3--input5">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset6">
+                        <legend>Nombre area</legend>
+                        <input type="text" class="form-col3--input6">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset7">
+                        <legend>ID SEP</legend>
+                        <input type="text" class="form-col3--input7">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fielset8">
+                        <legend>Descripción articulo</legend>
+                        <input type="text" class="form-col3--input8">
+                    </fieldset>
+
+                    <fieldset class="form-col3--fieldset9">
+                        <legend>Información adicional</legend>
+                        <textarea name="" id="" cols="30" rows="10" class="form-col3--txtArea"></textarea>
+                    </fieldset>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

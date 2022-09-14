@@ -1,0 +1,275 @@
+/* reset */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+/* end reset */
+ul {
+    list-style-type: none;
+}
+*{
+    /* box-sizing: border-box; */
+    margin:0;
+    padding: 0;
+}
+:root{
+    --yellow:rgb(216, 181, 0);
+    --blueIte:rgb(12, 62, 108);
+    --borderInputs: rgba(154, 154, 154, 1);
+    --colorButton: #002445;
+    --colorITE: #EAC400;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    min-height: 39.063rem;
+    min-width:85.375rem ;
+}
+.logo{
+  margin-top: 0% ;
+  margin-left:2% ;
+  width: 2.688rem;
+  height: 2.688rem;
+}
+.tit{
+margin-top: 0%;
+font-size: x-large;
+
+}
+.register-head{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.938rem;
+    margin-top: 0.1rem ;
+    margin-left: 0.1rem ;
+}
+
+.header-h1{
+    font-size: 3rem;
+    width: fit-content;
+    padding-right: 20rem;
+    margin: 0rem auto;
+    margin-top: 2.563rem;
+    text-transform:uppercase;
+}
+.header-p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0rem auto;
+}
+.options{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#Option-Admin{
+  /* visibility: hidden; */
+}
+#Option-Admin--hover{
+  /* display: block;   */
+  /* display: none;   */
+  visibility: hidden;
+}
+/* Este está visible */
+.options-admin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 40rem;
+    height: 30.375rem;
+    background-image: url('../svg/WaveAdmin.svg');
+    background-position: center bottom ;
+    background-repeat: no-repeat;
+    /* justify-content: flex-end; */
+    /* background: #FFFFFF; */
+    box-shadow: 0px 0.25rem 0.25rem rgba(15, 95, 169, 0.3);
+    border-radius: 1.87rem;
+    
+}
+.options-admin:hover{
+  
+}
+.options-admin--title{
+    font-size: 2.25rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+}
+
+.options-admin--p{
+    width: 35.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: auto;
+}
+.options-admin--img{
+    width: 19.938rem;
+    height: auto;
+    margin: auto;
+}
+/*
+.options-adminSS:hover{
+  visibility:collapse;
+}
+.options-adminSSS{
+  visibility:collapse;
+}
+.options-adminSSS:hover{
+  visibility:visible;
+}
+*/
+/* Este formulario está oculto */
+.options-admin-form{
+  
+  display: grid;
+  box-sizing: border-box;
+  width: 40rem;
+  height: 30.375rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0.25rem 0.25rem rgba(15, 95, 169, 0.3);
+  border-radius: 1.87rem;
+}
+
+.options-loan{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 40rem;
+    height: 30.375rem;
+    background-image: url('../svg/WaveResguardante.svg');
+    background-position: center bottom ;
+    background-repeat: no-repeat;
+    /* justify-content: flex-end; */
+    /* background: #FFFFFF; */
+    box-shadow: 0px 0.25rem 0.25rem rgba(15, 95, 169, 0.3);
+    border-radius: 1.87rem;
+  }
+  .options-loan--title{
+    font-size: 2.25rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+  }
+  .options-loan--p{
+    width: 35.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  .options-loan--img{
+    width: 18.25rem;
+    height: auto;
+    margin: auto;
+}
