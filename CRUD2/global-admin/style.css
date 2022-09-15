@@ -121,7 +121,7 @@ input, select {
 
 .Header{
     width: auto;
-    height: 10%;
+    height: 10vh;
     background-color: var(--color2);
     display: flex;
     justify-content: flex-start;
@@ -146,22 +146,22 @@ input, select {
 }
 
 .main{
+  
     display: grid;
-    height: 90vh;
+    height: 100%;
     width: auto;
-    
     /* start in row 1, column 2, end row 2 and column 9  */
     /* grid-area:1/2/2/10; */
-
     grid-template-columns: [aside] 3.5% [article] 96.5%;
-
     /* Este es para cuando se muestra el navbar completo */
     /* grid-template-columns: [aside] 11.70% [article] 88.3%; */
+    
   }
   .main-aside{
     grid-area: aside;
     background: var(--color3);
     height: 90vh;
+    width: auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -178,9 +178,10 @@ input, select {
     width: auto;
 }
 
-@media screen and (max-width: 200px) {
-  p {
-    font-size: 5px;
+@media screen and (max-width: 280px) {
+  .main-aside{
+    
+
   }
 }
 
