@@ -170,6 +170,14 @@ input, select {
     /* height: 100%; */
 }
 
+.main-aside--fileArticle.show, .main-aside--fileLoan.show, .main-aside--setings.show, .fileSetings-list.show {
+  
+  /* visibility: hidden; */
+  
+  
+}
+
+.file-Article
 
 .main-container{
   grid-area: article;
