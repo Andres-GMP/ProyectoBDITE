@@ -1,21 +1,21 @@
 const d = document
-export function alternarFormulario(formregister,formRegister,register,register){
-    const $formregister = d.getElementById(formregister)
+export function alternarFormulario(formLogin,formRegister,login,register){
+    const $formLogin = d.getElementById(formLogin)
     const $formRegister = d.getElementById(formRegister)
     $formRegister.style.display="none"
     function cambiar(){
-        if($formregister.style.display == "none"){
-            $formregister.style.display = "flex"
+        if($formLogin.style.display == "none"){
+            $formLogin.style.display = "flex"
             $formRegister.style.display = "none"
         }
         else{
-            $formregister.style.display = "none"
+            $formLogin.style.display = "none"
             $formRegister.style.display = "flex"
         }
     }
     d.addEventListener("click",(e)=>{
         e.preventDefault()
-        if(e.target.matches(register)||e.target.matches(register)) cambiar()
+        if(e.target.matches(login)||e.target.matches(register)) cambiar()
     
     })
 } 

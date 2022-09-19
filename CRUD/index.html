@@ -12,7 +12,10 @@
         <div class="nav-frame">
             <ul>
                 <li>
-                    <a href="">SOLICITUD DE ARTICULO</a>
+                    <a href="">Ejemplo 1</a>
+                </li>
+                <li>
+                    <a href="">Ejemplo 2</a>
                 </li>
             </ul>
         </div>
@@ -96,156 +99,76 @@
         </aside>
         <div class="frame-container">
             <!-- Aqui va el frame que le toca a cada uno -->
-            <div class="container">
-                
-                    <div class = "container-loan--title"><h3 class ="container-loan--title__h3">Solictar articulos</h3></div>
-                    <form action="" class ="container-loan--form">
-                        <!-- Columna 1 -->
-                        <div class="form-col1">
-                            <p class = "form-col1--title">Solicitud</p>
-                            <label for="" class = "form-col1--label1">ID articulo</label>
-                            <input type="text" class = "form-col1--input1">
+<div class="div-section-left">
+
+    <table class="table-prestamos">
+        <!--tr foreach(item in datos)>
+            <td>{{item.id}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.id}}</td>
+        </tr> -->
         
-                            <label for="" class = "form-col1--label2">Área donde se utilizará el articulo</label>
-                            <input list="areaWork" class = "form-col1--input1">
-                            <datalist id = "areaWork">
-                                <option value="something"></option>
-                            </datalist>
-                            
-                            <label for="" class = "form-col1--label3">Fecha inicial del prestamo</label>
-                            <input type="date">
-        
-                            <label for="" class = "form-col1--label4">Fecha inicial del prestamo</label>
-                            <input type="date">
-        
-                            <label for="" class = "form-col1--label5">Información adicional</label>
-                            <textarea name="" id="" cols="30" rows="5"></textarea>
-                            
-                            <a href="" class="form-col1--buttonSubmit">Solicitar prestamo</a>
-                        </div>
-                        <div class="form-gapY1">
-                        </div>
-                        <!-- Columna 2 -->
-                        <div class="form-col2">
-                            <p class="form-col2--title">Información del articulo</p>
-                            
-                            <label for="" class="form-col2--SelectImg">
-                                <input type="image" value="IMAGEN" >
-                            </label>
-                            <fieldset class="form-col2--fieldset1">
-                                <legend>Marca</legend>
-                                <input type="text" class="form-col2--input1">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset2">
-                                <legend>Modelo</legend>
-                                <input type="text" class="form-col2--input2">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset3">
-                                <legend>Serie</legend>
-                                <input type="text" class="form-col2--input3">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset4">
-                                <legend>Descripción</legend>
-                                <input type="text" class="form-col2--input4">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset5">
-                                <legend>Adquisición</legend>
-                                <input type="text" class="form-col2--input5">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset6">
-                                <legend>Valor</legend>
-                                <input type="text" class="form-col2--input6">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset7">
-                                <legend>Área</legend>
-                                <input type="text" class="form-col2--input7">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset8">
-                                <legend>Cantidad</legend>
-                                <input type="text" class="form-col2--input8">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset9">
-                                <legend>Resguardante</legend>
-                                <input type="text" class="form-col2--input9">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset10">
-                                <legend>Estatus</legend>
-                                <input type="text" class="form-col2--input10">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset11">
-                                <legend>Fecha</legend>
-                                <input type="text" class="form-col2--input11">
-                            </fieldset>
-        
-                            <fieldset class="form-col2--fieldset__txtArea" id="col2-txtarea">
-                                <legend>Documentación soporte</legend>
-                                <textarea name="" id="" cols="45" rows="3" class = "form-col2-txtArea"></textarea>
-                                <!-- <textarea name="" id="" class = "form-col2-txtArea"></textarea> -->
-                            </fieldset>
-                        </div>
-                        <div class="form-gapY2"></div>
-                        <!-- Columna 3 -->
-                        <div class="form-col3">
-                            <p class="form-col3--title">Información del prestamo</p>
-                            <fieldset class="form-col3--fieldset1">
-                                <legend>Resguardante</legend>
-                                <input type="text" class="form-col3--input1">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset2">
-                                <legend>Prestatario(a)</legend>
-                                <input type="text" class="form-col3--input2">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset3">
-                                <legend>Fecha inicial</legend>
-                                <input type="text" class="form-col3--input3">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset4">
-                                <legend>Fecha final</legend>
-                                <input type="text" class="form-col3--input4">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset5">
-                                <legend>ID Area</legend>
-                                <input type="text" class="form-col3--input5">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset6">
-                                <legend>Nombre area</legend>
-                                <input type="text" class="form-col3--input6">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset7">
-                                <legend>ID SEP</legend>
-                                <input type="text" class="form-col3--input7">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset8">
-                                <legend>Descripción articulo</legend>
-                                <input type="text" class="form-col3--input8">
-                            </fieldset>
-        
-                            <fieldset class="form-col3--fieldset9" id="col3-txtarea">
-                                <legend>Información adicional</legend>
-                                <textarea name="" id="" cols="45" rows="13" class="form-col3--txtArea"></textarea>
-                            </fieldset>
-        
-                        </div>
-                    </form>
-            </div>
-        </div>
+        <tr>
+            <th>Id Prestamo</th>
+            <th>Prestario</th>
+            <th>Descripcion</th>
+            <th>Area</th>
+            <th>Fecha de entrega</th>
+        </tr>
+
+        <tr>
+            <td>1254875</td>
+            <td>Axel Adrian Enciso Robles</td>
+            <td>Television 32 Pulgadas</td>
+            <td>Direccion</td>
+            <td>02/01/25</td>
+        </tr>
+   
+        <tr>
+            <td>1254875</td>
+            <td>Omar Adrian Millan Valenzuela</td>
+            <td>Escritorio blanco 2 metros</td>
+            <td>Oficina editorial</td>
+            <td>02/01/25</td>
+        </tr>
+
+        <tr>
+            <td>1254875</td>
+            <td>Zhou Fucheng</td>
+            <td>Television 32 Pulgadas</td>
+            <td>Direccion</td>
+            <td>02/01/25</td>
+        </tr>
+
+        <tr>
+            <td>1254875</td>
+            <td>Pablo Paloma Palomon</td>
+            <td>Television 32 Pulgadas</td>
+            <td>Direccion</td>
+            <td>02/01/25</td>
+        </tr>
+
+    </table>
+
+</div>
+<div class="div-section-right">
+    <div class="div-section-right-subinfo">informacion</div>
+    <div class="div-section-right-supersubinfo">
+
+        <form action="#" class="form-principal">   
+            <fieldset >
+                <legend>resguardante</legend>
+                <input type="text" placeholder="resguardante"></input>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+
+
+
+ </div>
         
     </div>
     <script src="script.js"></script>
